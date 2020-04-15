@@ -1,0 +1,169 @@
+doctype html
+html
+  title Central Stock
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // external css
+    link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+    script(src='javascripts/jquery-1.11.1.min.js')
+    script(src='javascripts/bootstrap.min.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Custom styles for this template
+    link(href='stylesheets/style.css', rel='stylesheet')
+    link(href='stylesheets/style-responsive.css', rel='stylesheet')
+    style.
+      body {
+      background-color:#2C3E50;
+      }
+      header {
+      background-color: #2C3E50;
+      border-bottom: 1px solid #fd9f1b;
+      }
+      .navbar h2 {
+      color:#fd9f1b;
+      }
+      .user {
+      font-family:;
+      }
+      .row a {
+      text-decoration: none;
+      color: black;
+      }
+      .panel-box {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      border: medium none;
+      }
+      .panel-box .panel-icon {
+      display: table-cell;
+      padding: 29px;
+      width: 1%;
+      vertical-align: top;
+      border-radius: 0px;
+      text-align: center;
+      /*border-bottom: 1px solid #fcfcfc;
+      border-top: 1px solid #fcfcfc;
+      border-right: 1px solid #fcfcfc;*/
+      }
+      .dashboard-stats .stat-icon {
+      line-height: 65px;
+      }
+      .bg-success {
+      background-color: #A3C86D !important;
+      color: #FFF !important;
+      }
+      .success-text {
+      color: #82b33a;
+      }
+      .bg-danger {
+      background-color: #FF7857 !important;
+      color: #FFF !important;
+      }
+      .danger-text {
+      color: #d15b3d;
+      }
+      .bg-lovender {
+      background-color: #8075C4 !important;
+      color: #FFF !important;
+      }
+      .lovender-text {
+      color: #6a5fb1;
+      }
+      .bg-info {
+      background-color: #7ACBEE !important;
+      color: #FFF !important;
+      }
+      .info-text {
+      color: #3ca0cb;
+      }
+      .size-h1 {
+      font-size: 20px;
+      }
+      .panel-icon p.text {
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      }
+      .panel-icon i {
+      text-align: center;
+      }
+      .panel-icon i {
+      text-align: center;
+      }
+      .text-large {
+      font-size: 50px;
+      }
+      .text-large {
+      font-size: 50px;
+      }
+      .img-circle {
+      width:200px;
+      height:200px;
+      margin-top:0px;
+      border:6px solid lightgrey;
+      }
+      .glyphicon, .fa {
+      font-size: 50px;
+      }
+      .glyphicon-off {
+      font-size: 20px;
+      }
+      .col-lg-12 {
+      color:white;
+      }
+      .panel:hover {
+      transform: scale(1.2);
+      transition-duration: 0.3s;
+      }
+      .header .top-menu ul li a {
+      background-color: #2C3E50;
+      border: 1px solid #2C3E50;
+      }
+      .header .top-menu ul li {
+      border-color: 1px solid #2C3E50;
+      }
+  body
+    center
+      P(style="color:orange;font-family:san-serif;font-size:40px;") CENTRAL STOCK DASHBOARD
+        .row.dashboard-stats.container
+          .col-md-3.col-sm-6
+            a(href='#')
+              section.panel.panel-box
+                .panel-left.panel-icon.bg-success
+                  br
+                  p#AECvalue(style="font-family:san-serif;font-size:40px;")
+                .panel-right.panel-icon.bg-reverse
+                  p.size-h1(style='margin-top:12px;') AEC
+                  
+          .col-md-3.col-sm-6
+            a(href='#')
+              section.panel.panel-box
+                .panel-left.panel-icon.bg-danger
+                  br
+                  p#ACETvalue(style="font-family:san-serif;font-size:40px;")
+                .panel-right.panel-icon.bg-reverse
+                  p.size-h1(style='margin-top:12px;') ACET
+                  
+
+
+          .col-md-3.col-sm-6
+            a(href='#')
+              section.panel.panel-box
+                .panel-left.panel-icon.bg-lovender
+                  br
+                  p#ACEvalue(style="font-family:san-serif;font-size:40px;")
+                .panel-right.panel-icon.bg-reverse
+                  p.size-h1(style='margin-top:12px;') ACE
+                  
+          .col-md-3.col-sm-6
+            a(href='#')
+              section.panel.panel-box
+                .panel-left.panel-icon(style='background-color:#FFB74D;')
+                  br
+                  p#POLYvalue(style="font-family:san-serif;font-size:40px;")
+                .panel-right.panel-icon.bg-reverse
+                  p.size-h1(style='margin-top:12px;') POLY           

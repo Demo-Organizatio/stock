@@ -1,0 +1,238 @@
+doctype html
+html
+  head
+    title
+    style.
+      /**************
+      Body css
+      ***************/
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #2a3132;
+      }
+      .box {
+      width: 350px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #191919;
+      border: none;
+      border-radius: 25px;
+      text-align: center;
+      }
+      h1{
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 5px;
+      }
+      /**************
+      Input Fields
+      ***************/
+      #username, #pass{
+      border: 2px solid #0097e6;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      padding: 15px 45px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 25px;
+      text-align: center;
+      transition: 250ms width ease, 250ms border-color ease;
+      }
+      /**************
+      On Hover
+      ***************/
+      #username:hover, #pass:hover{
+      width: 220px;
+      }
+      /**************
+      On Focus
+      ***************/
+      #username:focus, #pass:focus{
+      width: 250px;
+      border-color: #6fb98f;
+      }
+      /**************
+      Submit Button
+      ***************/
+      #submit{
+      border: 2px solid #2ecc71;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      padding: 15px 40px;
+      outline: none;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 200;
+      transition: 250ms background ease;
+      -webkit-transition: 250ms background ease;
+      -moz-transition: 250ms background ease;
+      -o-transition: 250ms background ease;
+      }
+      /**************
+      On Hover
+      ***************/
+      #submit:hover{
+      background: #2ecc71;
+      }
+      /*.slideInUp {
+      -webkit-animation-name: slideInUp;
+      animation-name: slideInUp;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      }
+      @keyframes slideInUp {
+      0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      }
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      }
+      } *
+      .bounceOut {
+      -webkit-animation-name: bounceOut;
+      animation-name: bounceOut;
+      -webkit-animation-duration: .75s;
+      animation-duration: .75s;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes bounceOut {
+      20% {
+      -webkit-transform: scale3d(.9, .9, .9);
+      transform: scale3d(.9, .9, .9);
+      }
+      50%, 55% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+      }
+      100% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
+      }
+      }
+      @keyframes bounceOut {
+      20% {
+      -webkit-transform: scale3d(.9, .9, .9);
+      transform: scale3d(.9, .9, .9);
+      }
+      50%, 55% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+      }
+      100% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
+      }
+      } 
+      .zoomInDown {
+      -webkit-animation-name: zoomInDown;
+      animation-name: zoomInDown;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes zoomInDown {
+      0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+      transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      }
+      60% {
+      opacity: 1;
+      -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+      transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      }
+      }
+      @keyframes zoomInDown {
+      0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+      transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+      }
+      60% {
+      opacity: 1;
+      -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+      transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+      }
+      }*/
+      .zoomIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes zoomIn {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        }
+        50% {
+        opacity: 1;
+        }
+        }
+        @keyframes zoomIn {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        }
+        50% {
+        opacity: 1;
+        }
+        } 
+
+  body
+    .container
+      .row
+        .col-md-4.col-md-offset-4
+          form.box(action='', method='POST', target='_self')
+            h1 login
+            input#username(type='text', name='username', placeholder='Username', autocomplete='off',required)
+            input#pass(type='password', name='password', placeholder='Password', autocomplete='off',required)
+            input#submit(type='submit', value='Login')

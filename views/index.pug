@@ -1,0 +1,2209 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title Stock Register
+    link(type='image/png', href='stockk.png', rel='icon')
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // external css
+    link(href='font-awesome/css/font-awesome.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+    script(src='http://code.jquery.com/jquery-1.9.1.js')
+    script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+    // toggle on/off button css & js
+    script(type='text/javascript', src='js/on-off-switch.js')
+    script(type='text/javascript', src='js/on-off-switch-onload.js')
+    link(rel='stylesheet', type='text/css', href='css/on-off-switch.css')
+    link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css')    
+    link(href='plugins/dataTables/dataTables.bootstrap.css', rel='stylesheet')
+
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    //link(href='http://www.jqueryscript.net/css/jquerysctipttop.css', rel='stylesheet', type='text/css')
+    title Statics
+    // css link
+    link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css')    
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+    link(rel='stylesheet', type='text/css', href='https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css')
+
+    // Page-Level CSS
+    //link(rel='stylesheet', href='css/runnable.css')
+
+    //icons
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    // core js
+    script(src='https:/pm2 restart /ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='js/jquery.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    //Date Picker
+    link(href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css', rel='stylesheet')
+    //Date Picker Plugins
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js')
+    //autosearch
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+
+    script.
+     
+      $('document').ready(function() {
+      $('#vfdate').datepicker();
+      $('#vfdate').datepicker('setDate', 'today');
+      $( "#vfdate" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
+
+         showAnim: "fold"
+        
+      });
+    script.
+     
+      $('document').ready(function() {
+      $('#vndate').datepicker();
+      $('#vndate').datepicker('setDate', 'today');
+      $( "#vndate" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
+
+         showAnim: "fold"
+        
+      });
+    script.
+     
+      $('document').ready(function() {
+      $('#vtdate').datepicker();
+      $('#vtdate').datepicker('setDate', 'today');
+      $( "#vtdate" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
+         showAnim: "fold"
+        
+      });
+
+    script.
+     
+      $('document').ready(function() {
+      $('#vrdate').datepicker();
+      $('#vrdate').datepicker('setDate', 'today');
+      $( "#vrdate" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
+         showAnim: "fold"
+      });
+
+    script.
+     
+      $('document').ready(function() {
+      $('#vcdate').datepicker();
+      $('#vcdate').datepicker('setDate', 'today');
+      $( "#vcdate" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
+         showAnim: "fold"
+        
+      });
+    script.
+      var data = [
+        "lab1",
+        "lab2"
+      ];
+      $(document).ready(
+      function () {
+      $(".labnames").autocomplete({
+      source: data,
+      autoFocus: true,
+      });
+      }
+      );  
+    script.
+      var data1 = [
+      "MCA",
+      "MCA"
+      ];
+      $(document).ready(
+      function () {
+      $(".branchnames").autocomplete({
+      source: data1,
+      autoFocus: true,
+      });
+      }
+      );
+    script.
+      var data2 = [
+      "ACET",
+      "ADTP"
+      ];
+      $(document).ready(
+      function () {
+      $(".collegenames").autocomplete({
+      source: data2,
+      autoFocus: true,
+      });
+      }
+      );  
+    style.
+      .header, #sidebar {
+      background: #2C3E50;
+      }
+      .tab {
+          overflow: scroll;
+          border: 1px solid #ccc;
+          background-color: skyblue;
+          color:white;
+      }
+      .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          width:100%;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+          border-left:1px solid #ccc;
+      }
+      .tab button:hover {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+      .tab button:focus {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+
+      .tab .active button {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+      span {
+      font-size: 14px;
+      }
+      .file-uploader {
+      background-color: #dbefe9;
+      border-radius: 3px;
+      color: #242424;
+      }
+      .file-uploader__message-area {
+      font-size: 18px;
+      padding: 1em;
+      text-align: center;
+      color: #377a65;
+      }
+      .file-list {
+      background-color: white;
+      font-size: 16px;
+      }
+      .file-list__name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+      .file-list li {
+      height: 50px;
+      line-height: 50px;
+      margin-left: .5em;
+      border: none;
+      overflow: hidden;
+      }
+      .removal-button {
+      width: 20%;
+      border: none;
+      background-color: #d65d38;
+      color: white;
+      }
+      .removal-button::before {
+      content: "X";
+      }
+      .removal-button:focus {
+      outline: 0;
+      }
+      .file-chooser {
+      padding: 1em;
+      transition: background-color 1s, height 1s;
+      }
+      .file-chooser p {
+      font-size: 18px;
+      padding-top: 1em;
+      }
+      .file-uploader {
+      max-width: 400px;
+      height: auto;
+      margin: 2em auto;
+      }
+      .file-uploader * {
+      display: block;
+      }
+      .file-uploader input[type=submit] {
+      margin-top: 2em;
+      float: right;
+      }
+      .file-list {
+      margin: 0 auto;
+      max-width: 90%;
+      }
+      .file-list__name {
+      max-width: 70%;
+      float: left;
+      }
+      .removal-button {
+      display: inline-block;
+      height: 100%;
+      float: right;
+      }
+      .file-chooser {
+      width: 90%;
+      margin: .5em auto;
+      }
+      .file-chooser__input {
+      margin: 0 auto;
+      }
+      .file-uploader__submit-button {
+      width: 100%;
+      border: none;
+      font-size: 1.5em;
+      padding: 1em;
+      background-color: #72bfa7;
+      color: white;
+      }
+      .file-uploader__submit-button:hover {
+      background-color: #a7d7c8;
+      }
+      .file-list li:after, .file-uploader:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      .hidden {
+      display: none;
+      }
+      .hidden input {
+      display: none;
+      }
+      .error {
+      background-color: #d65d38;
+      color: white;
+      }
+      *, *::before, *::after {
+      box-sizing: border-box;
+      }
+      ul, li {
+      margin: 0;
+      padding: 0;
+      }
+      .personal_details {
+      background-color: white;
+      border-left:4px solid #fd9f1b;
+      }
+      .personal_details h3 {
+      padding: 10px;
+      }
+      #name {
+      color: #B4886B;
+      font-weight: bold;
+      float: left;
+      margin-left:20px;
+      font-size:15px;
+      }
+      #wd
+      {
+      margin-left: 10px;
+      font-weight: bold;
+      font-family: Arial;
+      }
+      .panel-box {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      border: medium none;
+      }
+      .panel-box .panel-icon {
+      display: table-cell;
+      padding: px;
+      width: 1%;
+      vertical-align: top;
+      border-radius: 0px;
+      text-align: center;
+      /*border-bottom: 1px solid #fcfcfc;
+      border-top: 1px solid #fcfcfc;
+      border-right: 1px solid #fcfcfc;*/
+      }
+      .panel-box .size-h1 {
+      margin-top:7px;
+      }
+      .panel-box .fa {
+      margin-top:9px;
+      }
+      .bg-info {
+      background-color: #448CCB !important;
+      color: #FFF !important;
+      }
+      .info-text {
+      color: #448CCB;
+      }
+      .capitalize {
+      text-transform: capitalize;
+      }
+      .uppercase {
+      text-transform: uppercase;
+      }
+      .tab{
+      color:black !important;
+      }
+
+  style.
+    .data{
+    font-weight: bold;
+    }
+    .aa{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    font-family:Tw Cen MT;
+    }
+    .sub-menu .fa{
+    color:teal;
+    }
+    .fa{
+    color:#563f46;
+    }
+    input{
+    border:4px solid red;
+    }
+    td{
+    color:darkblue;
+    }
+      
+  
+  body
+    section#container
+      // header start
+      header.header.black-bg
+        .sidebar-toggle-box
+          .fa.fa-bars.tooltips(data-placement='right', data-original-title='Toggle Navigation' style='color:white')
+        // logo start
+        a.logo(href='#')
+          b
+            
+        // logo end
+        .top-menu
+          ul.nav.pull-right.top-menu
+            li
+              a.logout(href='logout') Logout
+      // header end
+      //
+        **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        ***********************************************************************************************************************************************************
+      // sidebar start
+      aside
+        #sidebar.nav-collapse(style="width:250px;")
+          // sidebar menu start
+          ul#nav-accordion.sidebar-menu
+            p.centered
+              a(href='#')
+                img.img-circle(src='stockk.png', width='80px')
+            h5.centered 
+              p #{JSON.parse(college)}
+              p(style="size:40px;font-weight:bold;color:aqua;text-shadow:2px 2px 4px darkblue;") CENTRAL STOCK REGISTER
+            li.sub-menu
+              a(data-toggle='tab', href='#new_entry' style="color:yellow;")
+                i.fa.fa-plus-square
+                span.aa New Entry
+            li.sub-menu
+              a(data-toggle='tab', href='#transfer' style="color:yellow;")
+                i.fa.fa-exchange
+                span.aa Transfered
+            li.sub-menu
+              a(data-toggle='tab', href='#recieve' style="color:yellow;")
+                i.fa.fa-recycle
+                span.aa Recieved
+            li.sub-menu
+              a(data-toggle='tab', href='#condomed' style="color:yellow;")
+                i.fa.fa-trash-o
+                span.aa Condemned
+            li.sub-menu
+              a(data-toggle='tab', href='#list' style="color:yellow;")
+                i.fa.fa-list
+                span.aa List
+            li.sub-menu
+              a(data-toggle='tab', href='#labs' style="color:yellow;")
+                i.fa.fa-flask
+                span.aa Labs
+            li.sub-menu
+              a(data-toggle='tab', href='#dept' style="color:yellow;")
+                i.fa.fa-flask
+                span.aa Departments 
+             
+          // sidebar menu end
+      // sidebar end
+      //
+        **********************************************************************************************************************************************************
+        MAIN CONTENT
+        ***********************************************************************************************************************************************************
+      // main content start
+      section#main-content
+        section.wrapper.site-min-height
+          .row.mt
+            .col-lg-12
+              .tab-content
+                #new_entry.tab-pane.fade.in.active
+                  center
+                    .row.dashboard-stats.container
+                      .col-md-2.col-sm-6.col-md-offset-4
+                        section.panel.panel-box
+                          .panel-left.panel-icon.bg-info
+    
+                            i.fa.fa-bars
+                          .panel-right.panel-icon.bg-reverse
+                            p.text-muted.no-margin.text 
+                            p.size-h1 #{JSON.parse(branch)}
+                    center          
+                      .container(style='background-color:#eaeaea;border-radius: 1px')
+                        p#msg.bg-info
+                        form.form-horizontal.form-line(action='newentry', method='post')
+                          .table-responsive.col-md-6.col-xs-12
+                            table
+                              tbody
+                                tr
+                                  .form-group
+                                    td.label(for='college', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') College:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                          i.fa.fa-university(style='font-size:11px')
+                                        input#college.branchnames.form-control(type='text', name='college', autocomplete='off',style="border-box:2px solid #563f46" value=JSON.parse(college), required)
+                                br          
+                                tr
+                                  .form-group
+                                    td.label(for='branch', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Department:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                          i.fa.fa-building(style='font-size:15px')
+                                        input#branch.branchnames.form-control(type='text', name='branch',value=JSON.parse(branch), autocomplete='off', required)    
+                                tr
+                                  .form-group
+                                    td.label(for='lab', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Lab Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#lab.labnames.form-control(type='text', name='lab',value='', placeholder='Lab Name', autocomplete='off', required)
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Date of Reciept:
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#vndate.form-control(type='text', name='date',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required)
+                                tr
+                                  .form-group
+                                    td.label(for='itemname', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Item Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                          i.fa.fa-shopping-bag(style='font-size:13px')
+                                        input#itemname.form-control(type='text', name='itemname',value='', placeholder='Enter Name', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)', autocomplete='off', required)
+                                tr          
+                                  .form-group
+                                    td.label(for='supplier', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-user(style='font-size:17px')
+                                        input#supplier.form-control(type='text', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)' name='supplier',value='', placeholder='Supplier Name', required, autocomplete='off')
+                                tr          
+                                  .form-group
+                                    td.label(for='address', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Address:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-address-book(style='font-size:13px')
+                                        textarea#address.form-control(name='address',rows='3', cols='22', placeholder='Supplier Address', required)
+                          .col-md-6.col-xs-12.table-responsive
+                            table
+                              tbody
+                                tr          
+                                  .form-group
+                                    td.label(for='invoice', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Invoice No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-list-ol(style='font-size:13px')
+                                        input#invoice.form-control(type='text', name='invoice',value='', placeholder='Invoice No', required, autocomplete='off')
+                                tr          
+                                  .form-group
+                                    td.label(for='unit', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Cost Per Unit:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#unit.form-control(type='text', name='unit',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost Per Unit', required, autocomplete="off")
+                                tr          
+                                  .form-group
+                                    td.label(for='quantity', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Quantity:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-balance-scale(style='font-size:10px')
+                                        input#quantity.form-control(type='text', name='quantity',value='', placeholder='Quantity', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete="off")
+                                tr          
+                                  .form-group
+                                    td.label(for='cost', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Total Cost:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#cost.form-control(type='text', name='cost',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost in Rupees', required, autocomplete="off")
+                                tr          
+                                  .form-group
+                                    td.label(for='pageno', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Page No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#pageno.form-control(type='text', name='pageno',value='', placeholder='Page No In Register', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete='off')  
+                                tr
+                                  .form-group
+                                    td.label(for='remarks', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Remarks:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-commenting(style='font-size:13px')
+                                        input#remarks.form-control(type='text', name='remarks',value='', placeholder='Remarks', required, autocomplete='off')
+                                tr
+                                  .form-group
+                                    td.label(for='specifications', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Specifications:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-file(style='font-size:13px')
+                                        textarea#specifications.form-control(rows='3', cols='22', name='specifications', placeholder='Specifications', required)
+                                tr.hide
+                                  .form-group
+                                    td.label(for='sno', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Serial No:
+                                    td
+                                      .input-group
+                                        span.input-group-addon(style="height:10px;background-color:#c6bcb6")
+                                            i.fa.fa-pencil
+                                        input#sno.form-control(name='sno', style='margin-center : 5%', readonly='readonly', autocomplete='off')
+
+                          .col-md-12
+                                tr
+                                  td
+                                    br
+                                    br
+                                    input.btn.btn-info(type='Submit', onclick='randomStringToInput("new");')
+                                    br
+                                    br
+                #transfer.tab-pane.fade.align
+                  center
+                    .row.dashboard-stats.container
+                      .col-md-2.col-sm-6.col-md-offset-4
+                        section.panel.panel-box
+                          .panel-left.panel-icon.bg-info
+    
+                            i.fa.fa-bars
+                          .panel-right.panel-icon.bg-reverse
+                            p.text-muted.no-margin.text 
+                            p.size-h1 #{JSON.parse(branch)}
+                    center
+                      .container(style='background-color: #eaeaea;border-radius: 1px')
+                        p#msg.bg-info
+                        form.form-horizontal.form-line(action='transfer', method='post')
+                          .table-responsive.col-md-6.col-xs-12
+                            table
+                              tbody
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_college', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') College:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-university(style='font-size:11px')
+                                        input#transfer_college.branchnames.form-control(type='text', name='transfer_college',value=JSON.parse(college), autocomplete='off' required, readonly)
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_college1', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Transfer College 
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-university(style='font-size:11px')
+                                        input#transfer_college1.collegenames.form-control(type='text', name='transfer_college1', autocomplete='off' required)
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_branch', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Department:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-building(style='font-size:15px')
+                                        input#transfer_branch.branchnames.form-control(type='text', name='transfer_branch',value=JSON.parse(branch), autocomplete='off' required, readonly)    
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_branch1', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Transfered Department:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-building(style='font-size:15px')
+                                        input#transfer_branch1.branchnames.form-control(type='text', name='transfer_branch1', placeholder='Branch to Transfer', autocomplete='off' required)    
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_lab', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Lab Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#transfer_lab.labnames.form-control(type='text', name='transfer_lab',value='', placeholder='Lab Name', autocomplete='off' required)
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_lab1', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Transfered Lab Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#transfer_lab1.labnames.form-control(type='text', name='transfer_lab1',value='', placeholder='Transfered Lab Name', autocomplete='off', required)
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Date of Reciept:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#transfer_date.form-control(type='text', name='transfer_date',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required, readonly)
+                                        br
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Date of Transfered:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#vtdate.form-control(type='text', name='transfer_date1',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required)
+                                        br
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_supplier', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-user(style='font-size:17px')
+                                        input#transfer_supplier.form-control(type='text', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)' name='transfer_supplier',value='', placeholder='Supplier Name', required, readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_address', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Address:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-address-book(style='font-size:13px')
+                                        textarea#transfer_address.form-control(name='transfer_address',rows='3', cols='22', placeholder='Supplier Address', required, readonly)
+                          .col-md-6.col-xs-12.table-responsive
+                            table
+                              tbody
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_invoice', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Invoice No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-list-ol(style='font-size:13px')
+                                        input#transfer_invoice.form-control(type='text', name='transfer_invoice',value='', placeholder='Invoice No', required, autocomplete="off")
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_itemname', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Item Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-shopping-bag(style='font-size:13px')
+                                        input#transfer_itemname.form-control(type='text', name='transfer_itemname',value='', placeholder='Enter Name', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)', required, readonly)
+                                        select#transfer_itemname1.form-control(name='transfer_itemname', style='max-width: 200px; display: none;')
+                                          option(value='') Select Item Name
+                                        input#transfer_itemname2.form-control(type='hidden', name='transfer_itemname',value='')  
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_unit', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Cost Per Unit:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#transfer_unit.form-control(type='text', name='transfer_unit',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost Per Unit', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_quantity', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Quantity:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-balance-scale(style='font-size:10px')
+                                        input#transfer_quantity.form-control(type='text', name='transfer_quantity',value='', placeholder='Quantity', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete="off")
+
+                                        input#transfer_quantity_hide(type='hidden', name='transfer_quantity_hide',value='')
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_cost', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Total Cost:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#transfer_cost.form-control(type='text', name='transfer_cost',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost in Rupees', required, autocomplete="off")
+
+                                        input#transfer_cost_hide(type='hidden', name='transfer_cost_hide',value='')
+                                tr          
+                                  .form-group
+                                    td.label(for='transfer_pageno', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Page No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#transfer_pageno.form-control(type='text', name='transfer_pageno',value='', placeholder='Page No In Register', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, readonly)  
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_remarks', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Remarks:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-commenting(style='font-size:13px')
+                                        input#transfer_remarks.form-control(type='text', name='transfer_remarks',value='', placeholder='Remarks', required, autocomplete='off')
+                                tr
+                                  .form-group
+                                    td.label(for='transfer_specifications', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Specifications:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-file(style='font-size:13px')
+                                        textarea#transfer_specifications.form-control(rows='3', cols='22', name='transfer_specifications', placeholder='Specifications', required, readonly)
+                                tr.hide
+                                  .form-group
+                                    td.label(for='transfer_sno', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Serial No:
+                                    td
+                                        .input-group
+                                          span.input-group-addon
+                                              i.fa.fa-pencil
+                                          input#transfer_sno.form-control(name='transfer_sno', style='margin-center : 5%', readonly='readonly')
+
+                          .col-md-12
+                                tr
+                                  td
+                                    br
+                                    br
+                                    input.btn.btn-info(type='Submit', onclick='randomStringToInput("transfer");')
+                                    br
+                                    br
+                #recieve.tab-pane.fade.align
+                  center
+                    .row.dashboard-stats.container
+                      .col-md-2.col-sm-6.col-md-offset-4
+                        section.panel.panel-box
+                          .panel-left.panel-icon.bg-info
+    
+                            i.fa.fa-bars
+                          .panel-right.panel-icon.bg-reverse
+                            p.text-muted.no-margin.text 
+                            p.size-h1 #{JSON.parse(branch)}
+                    center          
+                      .container(style='background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;margin-left:50px')        
+                        .row 
+                          .col-lg-12
+                            // Advanced Tables
+                            .panel.panel-default
+                              .panel-body
+                                .table-responsive
+                                  table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                    thead
+                                      tr
+                                        //th S.No
+                                        th College
+                                        th Transfered Department
+                                        th Recieved Department
+                                        th Transfered from
+                                        th Recieved To
+                                        th Transferd Date
+                                        th Item Name
+                                        th Specifications
+                                        th Supplier Name
+                                        th Supplier Address
+                                        th Invoice No
+                                        th Cost per Unit
+                                        th Quantity
+                                        th Total Cost
+                                        th Page No
+                                        th Remarks
+                                        th Action
+                                    tbody
+                                      if get
+                                        each member in get
+                                          tr.odd.gradeA
+                                            //td #{member.sno}
+                                            td #{member.college}
+                                            td #{member.branch}
+                                            td #{member.TransferBranch}
+                                            td #{member.lab}
+                                            td #{member.transferLab}
+                                            td #{member.transferDate}
+                                            td #{member.itemname}
+                                            td #{member.specifications}
+                                            td #{member.supplier}
+                                            td #{member.address}
+                                            td #{member.invoice}
+                                            td #{member.unit}
+                                            td #{member.transferQuantity}
+                                            td #{member.transferCost}
+                                            td #{member.pageno}
+                                            td #{member.remarks}
+                                            td(style="min-width:200px;")
+                                              button.btn.btn-primary.recieve_val(style="margin-right:15px;" name="Recieve", value=member._id,) Recieve 
+                        form#recieve_form.form-horizontal.form-line(action='recieve', method='post', style="display:none")
+                          .col-md-4.col-md-offset-2
+                            table
+                              tbody
+                                tr.hidden
+                                 .form-group
+                                    td.label(for='recieve_sno', style='color: #B4886B;font-weight: bold;font-size: 1.25em', align:left) S.No:    
+                                    td
+                                      .col-md-12.selectContainer
+                                        .input-group
+                                          span.input-group-addon
+                                            i.fa.fa-sort-numeric-desc(style='font-size:15px')
+                                          input#recieve_sno.form-control(type='text', name='recieve_sno', value='', placeholder='Enter Serial No', readonly)
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_college', style='color: #B4886B;font-weight: bold;font-size: 1.25em') College:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-university(style='font-size:11px')
+                                        input#recieve_college.branchnames.form-control(type='text', name='recieve_college',value=JSON.parse(college), autocomplete='off', required, readonly)
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_branch', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Department:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-building(style='font-size:15px')
+                                        input#recieve_branch.branchnames.form-control(type='text', name='recieve_branch',value=JSON.parse(branch), autocomplete='off', required, readonly)    
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_lab', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Transfered From:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#recieve_lab.labnames.form-control(type='text', name='recieve_lab',value='', placeholder='Recieved To', autocomplete='off', required, readonly)
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_lab1', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Recived To:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#recieve_lab1.labnames.form-control(type='text', name='recieve_lab1',value='', placeholder='Transfered From', autocomplete='off', required, readonly)
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color: #B4886B;font-weight: bold;font-size: 1.25em') Date of Transfer:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#recieve_date1.form-control(type='text', name='recieve_date1',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required, readonly)
+                                        br
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color: #B4886B;font-weight: bold;font-size: 1.25em') Date of Recieved:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#vrdate.form-control(type='text', name='recieve_date',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required)
+                                        br
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_itemname', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Item Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-shopping-bag(style='font-size:13px')
+                                        input#recieve_itemname.form-control(type='text', name='recieve_itemname',value='', placeholder='Enter Name', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)', autocomplete='off', required, readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_supplier', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Supplier Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-user(style='font-size:17px')
+                                        input#recieve_supplier.form-control(type='text', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)' name='recieve_supplier',value='', placeholder='Supplier Name', required, autocomplete='off', readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_address', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Supplier Address:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-address-book(style='font-size:13px')
+                                        textarea#recieve_address.form-control(name='recieve_address',rows='3', cols='22', placeholder='Supplier Address', required, readonly)
+                          br
+                          br
+                          br
+                          .col-md-6.col-xs-12.table-responsive
+                            table
+                              tbody
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_invoice', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Invoice No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-list-ol(style='font-size:13px')
+                                        input#recieve_invoice.form-control(type='text', name='recieve_invoice',value='', placeholder='Invoice No', required, autocomplete='off', readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_unit', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Cost Per Unit:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#recieve_unit.form-control(type='text', name='recieve_unit',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost Per Unit', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_quantity', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Quantity:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-balance-scale(style='font-size:10px')
+                                        input#recieve_quantity.form-control(type='text', name='recieve_quantity',value='', placeholder='Quantity', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_cost', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Total Cost:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#recieve_cost.form-control(type='text', name='recieve_cost',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost in Rupees', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='recieve_pageno', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Page No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#recieve_pageno.form-control(type='text', name='recieve_pageno',value='', placeholder='Page No In Register', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete='off')  
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_remarks', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Remarks:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-commenting(style='font-size:13px')
+                                        input#recieve_remarks.form-control(type='text', name='recieve_remarks',value='', placeholder='Remarks', autocomplete='off')
+                                tr
+                                  .form-group
+                                    td.label(for='recieve_specifications', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Specifications:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-file(style='font-size:13px')
+                                        textarea#recieve_specifications.form-control(rows='3', cols='22', name='recieve_specifications', placeholder='Specifications', required, readonly)
+                          .col-md-12.text-center
+                                tr
+                                  td
+                                    br
+                                    br
+                                    input.btn.btn-info(type='submit', value='Recieve')
+                                    br
+                                    br
+
+                #condomed.tab-pane.fade.align
+                  center
+                    .row.dashboard-stats.container
+                      .col-md-2.col-sm-6.col-md-offset-4
+                        section.panel.panel-box
+                          .panel-left.panel-icon.bg-info
+    
+                            i.fa.fa-bars
+                          .panel-right.panel-icon.bg-reverse
+                            p.text-muted.no-margin.text 
+                            p.size-h1 #{JSON.parse(branch)}
+                    center
+                      .container(style='background-color: #eaeaea;border-radius: 1px')
+                        p#msg.bg-info
+                        form.form-horizontal.form-line(action='condomendRemove', method='post')
+                          .table-responsive.col-md-6.col-xs-12
+                            table
+                              tbody
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_college', style='color: darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') College:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-university(style='font-size:11px')
+                                        input#condomend_college.branchnames.form-control(type='text', name='condomend_college',value=JSON.parse(college), autocomplete='off', required, readonly)
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_branch', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Department:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-building(style='font-size:15px')
+                                        input#condomend_branch.branchnames.form-control(type='text', name='condomend_branch',value=JSON.parse(branch), autocomplete='off', required, readonly)    
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_lab', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Lab Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-flask(style='font-size:13px')
+                                        input#condomend_lab.labnames.form-control(type='text', name='condomend_lab',value='', placeholder='Lab Name', autocomplete='off', required)
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Date of Reciept:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#condomend_date.form-control(type='text', name='condomend_date',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required, readonly)
+                                        br
+                                tr
+                                  .form-group
+                                    td.label.control-label(style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Date of Condemned:
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-calendar-check-o(style='font-size:13px')
+                                        input#vcdate.form-control(type='text', name='condomend_date1',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required)
+                                        br
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_itemname', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Item Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-shopping-bag(style='font-size:13px')
+                                        input#condomend_itemname.form-control(type='text', name='condomend_itemname',value='', placeholder='Enter Name', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)', autocomplete='off', required, readonly)
+                                        select#condomend_itemname1.form-control(name='condomend_itemname', style='max-width: 200px; display: none;')
+                                          option(value='') Select Item Name
+                                        input#condomend_itemname2.form-control(type='hidden', name='transfer_itemname',value='')
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_supplier', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Name:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-user(style='font-size:17px')
+                                        input#condomend_supplier.form-control(type='text', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)' name='condomend_supplier',value='', placeholder='Supplier Name', required, autocomplete='off', readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_address', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Supplier Address:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-address-book(style='font-size:13px')
+                                        textarea#condomend_address.form-control(name='condomend_address',rows='3', cols='22', placeholder='Supplier Address', required, readonly)
+                          .col-md-6.col-xs-12.table-responsive
+                            table
+                              tbody
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_invoice', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Invoice No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-list-ol(style='font-size:13px')
+                                        input#condomend_invoice.form-control(type='text', name='condomend_invoice',value='', placeholder='Invoice No', required, autocomplete='off')
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_unit', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Cost Per Unit:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#condomend_unit.form-control(type='text', name='condomend_unit',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost Per Unit', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_quantity', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Quantity:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-balance-scale(style='font-size:10px')
+                                        input#condomend_quantity.form-control(type='text', name='condomend_quantity',value='', placeholder='Quantity', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete="off")
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_cost', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Total Cost:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#condomend_cost.form-control(type='text', name='condomend_cost',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost in Rupees', required, autocomplete="off", readonly)
+                                tr          
+                                  .form-group
+                                    td.label(for='condomend_pageno', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Page No:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                        input#condomend_pageno.form-control(type='text', name='condomend_pageno',value='', placeholder='Page No In Register', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete='off', readonly)  
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_remarks', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Remarks:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-commenting(style='font-size:13px')
+                                        input.form-control(type='text', name='condomend_remarks',value='', placeholder='Remarks', required, autocomplete='off')
+                                tr
+                                  .form-group
+                                    td.label(for='condomend_specifications', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Specifications:   
+                                    td
+                                      .input-group
+                                        span.input-group-addon
+                                            i.fa.fa-file(style='font-size:13px')
+                                        textarea#condomend_specifications.form-control(rows='3', cols='22', name='condomend_specifications', placeholder='Specifications', required, readonly)
+                                tr.hide
+                                  .form-group
+                                    td.label(for='condomend_sno', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Serial No:
+                                    td
+                                        .input-group
+                                          span.input-group-addon
+                                              i.fa.fa-pencil
+                                          input#condomend_sno.form-control(name='condomend_sno', style='margin-center : 5%', readonly='readonly', autocomplete='off')
+
+                                tr.hide
+                                  .form-group
+                                    td.label(for='condomend_row_id', style='color:darkblue;text-shadow:1px 1px 2px black;font-weight: bold;font-size: 1.25em') Serial No:
+                                    td
+                                        .input-group
+                                          span.input-group-addon
+                                              i.fa.fa-pencil
+                                          input#condomend_row_id.form-control(name='condomend_row_id', style='margin-center : 5%', readonly='readonly', autocomplete='off')
+
+                          .col-md-12
+                                tr
+                                  td
+                                    br
+                                    br
+                                    input.btn.btn-danger(type='Submit', value='Remove')
+                                    br
+                                    br
+                #list.tab-pane.fade.align
+                  if newdata!=""
+                    center
+                      .row.dashboard-stats.container
+                        .col-md-2.col-sm-6.col-md-offset-4
+                          section.panel.panel-box
+                            .panel-left.panel-icon.bg-info
+      
+                              i.fa.fa-bars
+                            .panel-right.panel-icon.bg-reverse
+                              p.text-muted.no-margin.text
+                                span 
+                              if newdata!=""
+                                p.size-h1 #{newdata[0].branch}
+                    .container(style='background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;margin-left:50px')        
+                      .row 
+                        .col-lg-12
+                          // Advanced Tables
+                          .panel.panel-default
+                            .panel-body
+                              .table-responsive
+                                table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                  thead
+                                    tr
+                                      //th S.No
+                                      th College
+                                      th Department
+                                      th Lab Name
+                                      th Date of Reciept
+                                      th Item Name
+                                      th Specifications
+                                      th Supplier Name
+                                      th Supplier Address
+                                      th Invoice No
+                                      th Cost per Unit
+                                      th Quantity
+                                      th Total Cost
+                                      th Page No
+                                      th Remarks
+                                      th Action
+                                  tbody
+                                    if newdata
+                                      each member in newdata
+                                        tr.odd.gradeA
+                                          //td #{member.sno}
+                                          td #{member.college}
+                                          td #{member.branch}
+                                          td #{member.lab}
+                                          td #{member.date}
+                                          td #{member.itemname}
+                                          td #{member.specifications}
+                                          td #{member.supplier}
+                                          td #{member.address}
+                                          td #{member.invoice}
+                                          td #{member.unit}
+                                          td #{member.quantity}
+                                          td #{member.cost}
+                                          td #{member.pageno}
+                                          td #{member.remarks}
+                                          td(style="min-width:200px;")
+                                            button.btn.btn-primary.edit_val(style="margin-right:15px;"
+                                            name="edit", value=member._id) Edit 
+                                            button.btn.btn-danger.del_val(name="delete", value=member._id) Remove
+                      form#edit_form.form-horizontal.form-line(action='stockupdate', method='post', style="display:none")
+                        .col-md-4.col-md-offset-2
+                          table
+                            tbody
+                              tr.hidden
+                               .form-group
+                                  td.label(for='edit_sno', style='color: #B4886B;font-weight: bold;font-size: 1.25em', align:left) S.No:    
+                                  td
+                                    .col-md-12.selectContainer
+                                      .input-group
+                                        span.input-group-addon
+                                          i.fa.fa-sort-numeric-desc(style='font-size:15px')
+                                        input#edit_sno.form-control(type='text', name='edit_sno', value='', placeholder='Enter Serial No', readonly)
+                              tr
+                                .form-group
+                                  td.label(for='edit_college', style='color: #B4886B;font-weight: bold;font-size: 1.25em') College:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                        i.fa.fa-university(style='font-size:11px')
+                                      input#edit_college.branchnames.form-control(type='text', name='edit_college',value=JSON.parse(college), autocomplete='off', required, readonly)
+                              tr
+                                .form-group
+                                  td.label(for='edit_branch', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Department:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                        i.fa.fa-building(style='font-size:15px')
+                                      input#edit_branch.branchnames.form-control(type='text', name='edit_branch',value=JSON.parse(branch), autocomplete='off', required, readonly)    
+                              tr
+                                .form-group
+                                  td.label(for='edit_lab', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Lab Name:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                        i.fa.fa-flask(style='font-size:13px')
+                                      input#edit_lab.labnames.form-control(type='text', name='edit_lab',value='', placeholder='Lab Name', autocomplete='off', required)
+                              tr
+                                .form-group
+                                  td.label.control-label(style='color: #B4886B;font-weight: bold;font-size: 1.25em') Date of Reciept:
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                        i.fa.fa-calendar-check-o(style='font-size:13px')
+                                      input#edit_date.form-control(type='text', name='edit_date',pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}", title="Type the date in this format 'DD-MM-YYYY'", required)
+                                      br
+                              tr
+                                .form-group
+                                  td.label(for='edit_itemname', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Item Name:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                        i.fa.fa-shopping-bag(style='font-size:13px')
+                                      input#edit_itemname.form-control(type='text', name='edit_itemname',value='', placeholder='Enter Name', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)', autocomplete='off', required)
+                              tr          
+                                .form-group
+                                  td.label(for='edit_supplier', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Supplier Name:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-user(style='font-size:17px')
+                                      input#edit_supplier.form-control(type='text', onkeypress='return event.charCode >31 && (event.charCode <48 || event.charCode >=65)' name='edit_supplier',value='', placeholder='Supplier Name', required, autocomplete='off')
+                              tr          
+                                .form-group
+                                  td.label(for='edit_address', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Supplier Address:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-address-book(style='font-size:13px')
+                                      textarea#edit_address.form-control(name='edit_address',rows='3', cols='22', placeholder='Supplier Address', required)
+                        .col-md-6.col-xs-12.table-responsive
+                          table
+                            tbody
+                              tr          
+                                .form-group
+                                  td.label(for='edit_invoice', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Invoice No:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-list-ol(style='font-size:13px')
+                                      input#edit_invoice.form-control(type='text', name='edit_invoice',value='', placeholder='Invoice No', required, autocomplete='off')
+                              tr          
+                                .form-group
+                                  td.label(for='edit_unit', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Cost Per Unit:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                      input#edit_unit.form-control(type='text', name='edit_unit',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost Per Unit', required, autocomplete="off")
+                              tr          
+                                .form-group
+                                  td.label(for='edit_quantity', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Quantity:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-balance-scale(style='font-size:10px')
+                                      input#edit_quantity.form-control(type='text', name='edit_quantity',value='', placeholder='Quantity', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete="off")
+                                      input#edit_hidden_quantity(type='hidden', name='edit_hidden_quantity',value='')
+                              tr          
+                                .form-group
+                                  td.label(for='edit_cost', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Total Cost:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                      input#edit_cost.form-control(type='text', name='edit_cost',value='', onkeypress='return event.charCode >= 48 && event.charCode <= 57', placeholder='Cost in Rupees', required, autocomplete="off")
+                                      input#edit_hidden_cost(type='hidden', name='edit_hidden_cost',value='')
+                              tr          
+                                .form-group
+                                  td.label(for='edit_pageno', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Page No:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-sort-numeric-asc(style='font-size:15px')
+                                      input#edit_pageno.form-control(type='text', name='edit_pageno',value='', placeholder='Page No In Register', onkeypress='return event.charCode >= 48 && event.charCode <= 57', required, autocomplete='off')  
+                              tr
+                                .form-group
+                                  td.label(for='edit_remarks', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Remarks:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-commenting(style='font-size:13px')
+                                      input#edit_remarks.form-control(type='text', name='edit_remarks',value='', placeholder='Remarks', autocomplete='off')
+                              tr
+                                .form-group
+                                  td.label(for='edit_specifications', style='color: #B4886B;font-weight: bold;font-size: 1.25em') Specifications:   
+                                  td
+                                    .input-group
+                                      span.input-group-addon
+                                          i.fa.fa-file(style='font-size:13px')
+                                      textarea#edit_specifications.form-control(rows='3', cols='22', name='edit_specifications', placeholder='Specifications', required)
+                        .col-md-12.text-center
+                              tr
+                                td
+                                  br
+                                  br
+                                  input.btn.btn-info(type='Submit')
+                                  br
+                                  br                
+                  else
+                    div.col-md-12
+                      div.well
+                        h3.text-center
+                          | No Data Found      
+                #labs.tab-pane.fade.align
+                  .container(style="width:100%;margin-left:50px")
+                    .row
+                      ul.nav.nav-tabs.nav-justified.tab
+                        -function cleanup(arr, prop) {
+                          -var new_arr = [];
+                          -var lookup  = {};
+                          -for (var i in arr) {
+                            -lookup[arr[i][prop]] = arr[i];
+                          -}
+                          -for (i in lookup) {
+                            -new_arr.push(lookup[i]);
+                          -}
+                          -return new_arr;
+                        -}
+                         
+                        -var n = cleanup(newdata, 'lab');
+                        -var default_lab = JSON.parse(JSON.stringify(n));
+                          - for(var j = 0; j < n.length; j++){
+                            -var labNew = n.lab;
+                            -for(var a=0; a<=j; a++){
+                              if default_lab!=n[a].lab && n[a] != labNew
+                                if n[j].lab!=check
+                                  li(style='height:130px')
+                                    button(style='height:130px', data-toggle='pill', href='#laps'+j) #{n[j].lab}
+                                    //- default_lab=n[j].lab;
+                                    -check = n[j].lab
+                            -}
+                          -} 
+                      .tab-content
+                        -var btn_inc = 0;
+                        -var data_inc = 0;
+                        -var c = 0;
+                        -var ar = new Array(); ar[0] = 'Stock'; ar[1] = 'Transfered'; ar[2] = 'Received'; ar[3] = 'Condemned';
+                        -for(var m = 0; m < n.length; m++)
+                          --c++;
+                          div(id='laps'+m).tab-pane.fade.align
+                            ul.nav.nav-tabs.nav-justified.tab
+                              -var default_type = "";
+                                -for(var p = 0; p < ar.length; p++){
+                                  -btn_inc++;
+                                    li
+                                      button(data-toggle='pill', href='#sub'+btn_inc) #{ar[p]}
+                                -} 
+                              li
+                                button(data-toggle='pill', href='#con'+c) Total
+                            .tab-content
+                              -var final = 0;
+                                -for(var i = 0; i < ar.length; i++)
+                                  //-final = parseInt(final)+parseInt(newdata[i].cost);
+                                  -data_inc++;
+                                    div(id='sub'+data_inc).tab-pane.fade.align
+                                      .col-lg-12
+                                      .panel.panel-default
+                                        .panel-body
+                                          .table-responsive
+                                            table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                              thead
+                                                tr
+                                                  //th S.No
+                                                  th College
+                                                  th Branch
+                                                    if i==0
+                                                      th Lab
+                                                    if i==1
+                                                      th Lab
+                                                      th Transfered To
+                                                      th Transfered Date
+                                                    if i==2
+                                                      th Lab
+                                                      th Recieve From
+                                                      th Recieved Date
+                                                    if i==3
+                                                      th lab
+                                                      th Condemned Date
+                                                  th Date of Reciept
+                                                  th Item Name
+                                                  th Specifications
+                                                  th Supplier Name
+                                                  th Supplier Address
+                                                  th Invoice No
+                                                  th Cost per unit
+                                                  th Quantity
+                                                  th Total Cost
+                                                  th Page No
+                                                  th Remarks
+                                              tbody
+                                                -var stock = 0;
+                                                if i==0
+                                                  - for(var k = 0; k < newdata.length; k++){
+                                                    if n[m].lab==newdata[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{newdata[k].sno}
+                                                        td #{newdata[k].college}
+                                                        td #{newdata[k].branch}
+                                                        td #{newdata[k].lab}
+                                                        td #{newdata[k].date}
+                                                        td #{newdata[k].itemname}
+                                                        td #{newdata[k].specifications}
+                                                        td #{newdata[k].supplier}
+                                                        td #{newdata[k].address}
+                                                        td #{newdata[k].invoice}
+                                                        td #{newdata[k].unit}
+                                                        td #{newdata[k].quantity}
+                                                        td #{newdata[k].cost}
+                                                        td #{newdata[k].pageno}
+                                                        td #{newdata[k].remarks}
+                                                      -stock = parseInt(stock)+parseInt(newdata[k].cost);
+                                                  -}
+                                                  div.text-center
+                                                    .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                      label STOCK COST : #{stock}
+                                                -var transfer = 0;
+                                                if i==1
+                                                  - for(var k = 0; k < transferstock.length; k++){
+                                                    if n[m].lab==transferstock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{transferstock[k].sno}
+                                                        td #{transferstock[k].college}
+                                                        td #{transferstock[k].branch}
+                                                        td #{transferstock[k].lab}
+                                                        td #{transferstock[k].transferLab}
+                                                        td #{transferstock[k].transferDate}
+                                                        td #{transferstock[k].date}
+                                                        td #{transferstock[k].itemname}
+                                                        td #{transferstock[k].specifications}
+                                                        td #{transferstock[k].supplier}
+                                                        td #{transferstock[k].address}
+                                                        td #{transferstock[k].invoice}
+                                                        td #{transferstock[k].unit}
+                                                        td #{transferstock[k].transferQuantity}
+                                                        td #{transferstock[k].transferCost}
+                                                        td #{transferstock[k].pageno}
+                                                        td #{transferstock[k].remarks}
+                                                      -transfer = parseInt(transfer)+parseInt(transferstock[k].transferCost);
+                                                  -}
+                                                  div.text-center
+                                                    .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                      label TRANSFER COST : #{transfer}
+                                                -var recieved = 0;
+                                                if i==2
+                                                  - for(var k = 0; k < recievestock.length; k++){
+                                                    if n[m].lab==recievestock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{recievestock[k].sno}
+                                                        td #{recievestock[k].college}
+                                                        td #{recievestock[k].branch}
+                                                        td #{recievestock[k].lab}
+                                                        td #{recievestock[k].transferdLab}
+                                                        td #{recievestock[k].recievedDate}
+                                                        td #{recievestock[k].date}
+                                                        td #{recievestock[k].itemname}
+                                                        td #{recievestock[k].specifications}
+                                                        td #{recievestock[k].supplier}
+                                                        td #{recievestock[k].address}
+                                                        td #{recievestock[k].invoice}
+                                                        td #{recievestock[k].unit}
+                                                        td #{recievestock[k].quantity}
+                                                        td #{recievestock[k].cost}
+                                                        td #{recievestock[k].pageno}
+                                                        td #{recievestock[k].remarks}
+                                                      -recieved = parseInt(recieved)+parseInt(recievestock[k].cost);
+                                                  -}
+                                                  div.text-center
+                                                    .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                      label RECIEVED COST : #{recieved}
+                                                -var condomed = 0;
+                                                if i==3
+                                                  - for(var k = 0; k < condomedstock.length; k++){
+                                                    if n[m].lab==condomedstock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{condomedstock[k].sno}
+                                                        td #{condomedstock[k].college}
+                                                        td #{condomedstock[k].branch}
+                                                        td #{condomedstock[k].lab}
+                                                        td #{condomedstock[k].condomendDate}
+                                                        td #{condomedstock[k].date}
+                                                        td #{condomedstock[k].itemname}
+                                                        td #{condomedstock[k].specifications}
+                                                        td #{condomedstock[k].supplier}
+                                                        td #{condomedstock[k].address}
+                                                        td #{condomedstock[k].invoice}
+                                                        td #{condomedstock[k].unit}
+                                                        td #{condomedstock[k].quantity}
+                                                        td #{condomedstock[k].cost}
+                                                        td #{condomedstock[k].pageno}
+                                                        td #{condomedstock[k].remarks}
+                                                      -condomed = parseInt(condomed)+parseInt(condomedstock[k].cost);
+                                                  -}
+                                                  div.text-center
+                                                    .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                      label CONDEMNED COST : #{condomed}
+                                    div(id='con'+c).tab-pane.fade.align
+                                      .col-lg-12
+                                      .panel.panel-default
+                                        .panel-body
+                                          .table-responsive
+                                            table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                              thead
+                                                tr
+                                                  //th S.No
+                                                  th Item Name
+                                                  th Supplier Name
+                                                  th Supplier Address
+                                                  th Type
+                                                  th Quantity
+                                                  th Cost
+                                                  th Page No
+                                                  th Invoice No
+                                                  th Department
+                                                  th Lab
+                                                  th Transfer Lab
+                                                  th Recieve Lab
+                                                  th College
+                                                  th Date of Recieve
+                                                  th Date of Transfer
+                                                  th Date of Reciept
+                                                  th Condemned date
+                                                  th Remarks
+                                              tbody
+                                                -var total_this_lab = 0;
+                                                  - for(var k = 0; k < newdata.length; k++){
+                                                    if n[m].lab==newdata[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{newdata[k].sno}
+                                                        td #{newdata[k].itemname}
+                                                        td #{newdata[k].supplier}
+                                                        td #{newdata[k].address}
+                                                        td.text-center
+                                                          label.text-info Stock
+                                                        td #{newdata[k].quantity}
+                                                        td #{newdata[k].cost}
+                                                        td #{newdata[k].pageno}
+                                                        td #{newdata[k].invoice}
+                                                        td #{newdata[k].branch}
+                                                        td #{newdata[k].lab}
+                                                        td -
+                                                        td -
+                                                        td #{newdata[k].college}
+                                                        td -
+                                                        td -
+                                                        td #{newdata[k].date}
+                                                        td -
+                                                        td #{newdata[k].remarks}
+                                                      -total_this_lab = parseInt(total_this_lab)+parseInt(newdata[k].cost);
+                                                  -}
+                                                  - for(var k = 0; k < transferstock.length; k++){
+                                                    if n[m].lab==transferstock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{transferstock[k].sno}
+                                                        td #{transferstock[k].itemname}
+                                                        td #{transferstock[k].supplier}
+                                                        td #{transferstock[k].address}
+                                                        td.text-center
+                                                          label.text-warning Transfer
+                                                        td #{transferstock[k].transferQuantity}
+                                                        td #{transferstock[k].transferCost}
+                                                        td #{transferstock[k].pageno}
+                                                        td #{transferstock[k].invoice}
+                                                        td #{transferstock[k].branch}
+                                                        td -
+                                                        td #{transferstock[k].transferLab}
+                                                        td -
+                                                        td #{transferstock[k].college}
+                                                        td -
+                                                        td #{transferstock[k].transferDate}
+                                                        td #{transferstock[k].date}
+                                                        td -
+                                                        td #{transferstock[k].remarks}
+                                                      -total_this_lab = parseInt(total_this_lab)+parseInt(transferstock[k].transferCost);
+                                                  -}
+                                                  - for(var k = 0; k < recievestock.length; k++){
+                                                    if n[m].lab==recievestock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{recievestock[k].sno}
+                                                        td #{recievestock[k].itemname}
+                                                        td #{recievestock[k].supplier}
+                                                        td #{recievestock[k].address}
+                                                        td.text-center
+                                                          label.text-danger Recieved
+                                                        td #{recievestock[k].quantity}
+                                                        td #{recievestock[k].cost}
+                                                        td #{recievestock[k].pageno}
+                                                        td #{recievestock[k].invoice}
+                                                        td #{recievestock[k].branch}
+                                                        td -
+                                                        td #{recievestock[k].transferdLab}
+                                                        td #{recievestock[k].lab}
+                                                        td #{recievestock[k].college}
+                                                        td #{recievestock[k].date}
+                                                        td -
+                                                        td #{recievestock[k].date}
+                                                        td -
+                                                        td #{recievestock[k].remarks}
+                                                      -total_this_lab = parseInt(total_this_lab)+parseInt(recievestock[k].cost);
+                                                  -}
+                                                  - for(var k = 0; k < condomedstock.length; k++){
+                                                    if n[m].lab==condomedstock[k].lab
+                                                      tr.odd.gradeA
+                                                        //td #{condomedstock[k].sno}
+                                                        td #{condomedstock[k].itemname}
+                                                        td #{condomedstock[k].supplier}
+                                                        td #{condomedstock[k].address}
+                                                        td.text-center
+                                                          label.text-danger Condemned
+                                                        td #{condomedstock[k].quantity}
+                                                        td #{condomedstock[k].cost}
+                                                        td #{condomedstock[k].pageno}
+                                                        td #{condomedstock[k].invoice}
+                                                        td #{condomedstock[k].branch}
+                                                        td #{condomedstock[k].lab}
+                                                        td -
+                                                        td -
+                                                        td #{condomedstock[k].college}
+                                                        td -
+                                                        td -
+                                                        td #{condomedstock[k].date}
+                                                        td #{condomedstock[k].condomendDate}
+                                                        td #{condomedstock[k].remarks}
+                                                      -total_this_lab = parseInt(total_this_lab)+parseInt(condomedstock[k].cost);
+                                                  -}
+                                                  div.text-center
+                                                    .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                      label TOTAL COST : #{total_this_lab}
+                #dept.tab-pane.fade.align
+                  if totdata!=""
+                    center
+                      .row.dashboard-stats.container
+                        .col-md-2.col-sm-6.col-md-offset-4
+                          section.panel.panel-box
+                            .panel-left.panel-icon.bg-info
+      
+                              i.fa.fa-bars
+                            .panel-right.panel-icon.bg-reverse
+                              p.text-muted.no-margin.text
+                                span 
+                              if totdata!=""
+                                p.size-h1 #{totdata[0].branch}
+                    .container(style='background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;margin-left:50px')     
+                      .row
+                        br
+                        form.form-horizontal.col-md-8.col-md-offset-2.col-xs-12(action='', method='post')
+                          br
+                          br
+                          br
+                          .form-group.registration-date
+                            label.control-label.col-sm-3(for='registration-date1') Select Date:
+                            .input-group.registration-date-time
+                              span#basic-addon1.input-group-addon
+                                span from
+                              input#from.form-control(type='date', name='fdate', required='')
+                              span#basic-addon1.input-group-addon
+                                span to
+                              input#to.form-control(type='date', name='tdate', required='')
+                          .col-md-12.text-center
+                            br
+                            button#generate.btn.btn-success(type='button') Generate Report
+                      br
+                      br
+                    .container(style='background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;margin-left:50px')        
+                      .row 
+                        .col-lg-12
+                          // Advanced Tables
+                          .panel.panel-default
+                            .panel-body
+                              .table-responsive
+                                table.totdata.dataTables-example.table.table-striped.table-bordered.table-hover
+                                  thead
+                                    tr
+                                      //th S.No
+                                      th College
+                                      th Department
+                                      th Lab Name
+                                      th Date of Reciept
+                                      th Item Name
+                                      th Specifications
+                                      th Supplier Name
+                                      th Supplier Address
+                                      th Invoice No
+                                      th Cost per Unit
+                                      th Quantity
+                                      th Total Cost
+                                      th Page No
+                                      th Remarks
+                                  tbody
+                                    //- if totdata
+                                    //-   each member in totdata
+                                    //-     tr.odd.gradeA
+                                    //-       //td #{member.sno}
+                                    //-       td #{member.college}
+                                    //-       td #{member.branch}
+                                    //-       td #{member.lab}
+                                    //-       td #{member.date}
+                                    //-       td #{member.itemname}
+                                    //-       td #{member.specifications}
+                                    //-       td #{member.supplier}
+                                    //-       td #{member.address}
+                                    //-       td #{member.invoice}
+                                    //-       td #{member.unit}
+                                    //-       td #{member.quantity}
+                                    //-       td #{member.cost}
+                                    //-       td #{member.pageno}
+                                    //-       td #{member.remarks}
+                  else
+                    h1.jumbotron.text-center No Data Found
+                #contact.tab-pane.fade.align
+                  .container
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    .row
+                      .col-md-12(style='text-align: center;')
+                        h1(style='color: grey;font-size: 45px')
+                          b For any queries,please contact
+                      .col-md-12.img-responsive(style='text-align: center;')
+                        img(src='images/.jpg', width='620px', draggable="false")
+    // MAIN CONTENT
+      // main content end
+
+      //footer start--
+        <footer class="site-footer">
+        <div class="text-center">
+        2014 - Alvarez.is
+        <a href="blank.html#" class="go-top">
+        <i class="fa fa-angle-up"></i>
+        </a>
+        </div>
+        </footer>
+        <!--footer end
+    // js placed at the end of the document so the pages load faster
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery-ui-1.9.2.custom.min.js')
+    script(src='js/jquery.ui.touch-punch.min.js')
+    script.include(type='text/javascript', src='js/jquery.dcjqaccordion.2.7.js')
+    script(src='js/jquery.scrollTo.min.js')
+    script(src='js/jquery.nicescroll.js', type='text/javascript')
+    script(src='javascripts/date.js')  
+    // script for this page
+    script.
+      //custom select box
+      $(function(){
+      $('select.styled').customSelect();
+      });
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js')
+    // common script for all pages
+    //script(src='js/common-scripts.js') 
+    
+    //Online Links for datatables    
+    script(src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js')
+    script(src='https://cdn.datatables.net/buttons/1.4.1/js/dataTables.buttons.min.js')
+    script(src='//cdn.datatables.net/buttons/1.3.1/js/buttons.flash.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js')
+    script(src='//cdn.rawgit.com/bpampuch/pdfmake/0.1.32/build/pdfmake.min.js')
+    script(src='//cdn.rawgit.com/bpampuch/pdfmake/0.1.32/build/vfs_fonts.js')
+    script(src='//cdn.datatables.net/buttons/1.4.1/js/buttons.html5.min.js')
+    script(src='//cdn.datatables.net/buttons/1.4.1/js/buttons.print.min.js')
+    // random numbers
+    script(src='js/randomnumbers.js')
+    script.
+      $('.fa-bars').click(function () {
+      if ($('#sidebar > ul').is(":visible") === true) {
+        $('#main-content').css({
+          'margin-left': '0px'
+        });
+        $('#sidebar').css({
+          'margin-left': '-210px'
+        });
+        $('#sidebar > ul').hide();
+        $("#container").addClass("sidebar-closed");
+      } else {
+      $('#main-content').css({
+      'margin-left': '210px'
+      });
+      $('#sidebar > ul').show();
+      $('#sidebar').css({
+      'margin-left': '0'
+      });
+      $("#container").removeClass("sidebar-closed");
+      }
+      });
+    script.
+      $(document).ready(function () {
+      $('.dataTables-example').dataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'copy',
+                title: 'Stock Register'
+            },
+            {
+                extend: 'csvHtml5',
+                title: 'Stock Register'
+            },
+            {
+                extend: 'excelHtml5',
+                title: 'Stock Register'
+            },
+            {
+                extend: 'pdfHtml5',
+                title: 'Stock Register'
+            },
+            {
+                extend: 'print',
+                title: 'Stock Register'
+            }
+        ]
+      });
+      });
+    script.
+      //custom select box
+      $(function(){
+      $('select.styled').customSelect();
+      });
+    script.
+      $(".edit_val").click(function(){
+        $("#edit_form").css("display","block");
+        var id = $(this).val();
+        $.post('/edit_details',{id:id}, function(data,textStatus,jqXHR){
+            var jsondata = JSON.stringify(data[0]);
+            var docs = JSON.parse(jsondata);
+            $("#edit_sno").val(docs.sno);
+            $("#edit_itemname").val(docs.itemname);
+            $("#edit_supplier").val(docs.supplier);
+            $("#edit_address").val(docs.address);
+
+            $("#edit_quantity").val(docs.quantity);
+            $("#edit_hidden_quantity").val(docs.quantity);
+            $("#total_quantity").val(docs.quantity);
+            $("#edit_unit").val(docs.unit);
+            $("#edit_pageno").val(docs.pageno);
+            $("#edit_invoice").val(docs.invoice);
+            $("#edit_department").val(docs.branch);
+            $("#edit_lab").val(docs.lab);
+            $("#edit_college").val(docs.college);
+            $("#edit_date").val(docs.date);
+            $("#edit_remarks").val(docs.remarks);
+            $("#edit_specifications").val(docs.specifications);
+       
+            $("#edit_cost").val(docs.cost);
+            $("#edit_hidden_cost").val(docs.cost);
+          });
+      });
+    script.
+      $(".del_val").click(function(){
+        var id = $(this).val();
+          $.post('/delete_details',{id:id}, function(data1,textStatus,jqXHR){
+            alert("Deleted Sucessfully");
+          });
+      });
+    script.
+      $("#transfer_lab").blur(function(){
+        var id = $(this).val();
+          $.post('/transfer_find',{id:id}, function(data,textStatus,jqXHR){
+            if(data.length>1){
+              $("#transfer_itemname").css({"display":"none"});
+
+              $("#transfer_itemname").attr('name','');
+              $("#transfer_itemname1").attr('name','');
+              $("#transfer_itemname2").attr('name','transfer_itemname');
+
+              $("#transfer_itemname1").fadeIn('fast');
+              for(var tk=0; tk<data.length; tk++) {
+                $('#transfer_itemname1').append($('<option/>', {value: data[tk]._id, text : data[tk].itemname }));
+              }
+            }
+            else {
+              $("#transfer_itemname1").css({"display":"none"});
+              $("#transfer_itemname").fadeIn('fast');
+
+              $("#transfer_itemname1").attr('name','');
+              $("#transfer_itemname2").attr('name','');
+              $("#transfer_itemname").attr('name','transfer_itemname');
+
+              
+
+              $("#transfer_sno").val(data[0].sno);
+
+              $("#transfer_lab").val(data[0].lab);
+              $("#transfer_id").val(data[0]._id);
+
+              $("#transfer_itemname").val(data[0].itemname);
+
+              $("#transfer_date").val(data[0].date);
+
+              $("#transfer_specifications").val(data[0].specifications);
+              $("#transfer_supplier").val(data[0].supplier);
+              $("#transfer_address").val(data[0].address);
+              $("#transfer_invoice").val(data[0].invoice);
+              $("#transfer_unit").val(data[0].unit);
+
+              $("#transfer_quantity").val(data[0].quantity);
+              $("#transfer_quantity_hide").val(data[0].quantity);
+
+              $("#transfer_cost").val(data[0].cost);
+              $("#transfer_cost_hide").val(data[0].cost);
+
+              $("#transfer_pageno").val(data[0].pageno);
+              $("#transfer_remarks").val(data[0].remarks);
+            }
+          });
+      });
+
+    script.
+      $("#transfer_itemname1").change(function(){
+      var id = $(this).val();
+          $.post('/transfer_find_using_lab',{id:id}, function(data,textStatus,jqXHR){
+            $("#transfer_sno").val(data[0].sno);
+
+            $("#transfer_lab").val(data[0].lab);
+            $("#transfer_lab1").val(data[0].transferLab);
+            $("#transfer_id").val(data[0]._id);
+
+            $("#transfer_itemname2").val(data[0].itemname);
+
+            $("#transfer_date").val(data[0].date);
+
+            $("#transfer_specifications").val(data[0].specifications);
+            $("#transfer_supplier").val(data[0].supplier);
+            $("#transfer_address").val(data[0].address);
+            $("#transfer_invoice").val(data[0].invoice);
+            $("#transfer_unit").val(data[0].unit);
+
+            $("#transfer_quantity").val(data[0].quantity);
+            $("#transfer_quantity_hide").val(data[0].quantity);
+
+            $("#transfer_cost").val(data[0].cost);
+            $("#transfer_cost_hide").val(data[0].cost);
+
+            $("#transfer_pageno").val(data[0].pageno);
+            $("#transfer_remarks").val(data[0].remarks);
+          });
+      });
+    script.
+      $(".recieve_val").click(function(){
+        $("#recieve_form").css("display","block");
+        var id = $(this).val();
+        $.post('/recieve_details',{id:id}, function(data,textStatus,jqXHR){
+            var jsondata = JSON.stringify(data[0]);
+            var docs = JSON.parse(jsondata);
+            $("#recieve_sno").val(docs.sno);
+            $("#recieve_itemname").val(docs.itemname);
+            $("#recieve_supplier").val(docs.supplier);
+            $("#recieve_address").val(docs.address);
+            $("#recieve_quantity").val(docs.transferQuantity);
+            $("#recieve_unit").val(docs.unit);
+            $("#recieve_pageno").val(docs.pageno);
+            $("#recieve_invoice").val(docs.invoice);
+            $("#recieve_department").val(docs.branch);
+            $("#recieve_lab").val(docs.lab);
+            $("#recieve_lab1").val(docs.transferLab);
+            $("#recieve_college").val(docs.college);
+            $("#recieve_date1").val(docs.transferDate);
+            $("#recieve_remarks").val(docs.remarks);
+            $("#recieve_specifications").val(docs.specifications);
+            $("#recieve_cost").val(docs.transferCost);
+          });
+      });
+
+
+    script.
+      $("#condomend_lab").blur(function(){
+        var id = $(this).val();
+          $.post('/condomend_find',{id:id}, function(data,textStatus,jqXHR){
+            if(data.length>1){
+              $("#condomend_itemname").css({"display":"none"});
+
+              $("#condomend_itemname").attr('name','');
+              $("#condomend_itemname1").attr('name','');
+              $("#condomend_itemname2").attr('name','condomend_itemname');
+
+              $("#condomend_itemname1").fadeIn('fast');
+              for(var tk=0; tk<data.length; tk++) {
+                $('#condomend_itemname1').append($('<option/>', {value: data[tk]._id, text : data[tk].itemname }));
+              }
+            }
+            else {
+              $("#condomend_itemname1").css({"display":"none"});
+              $("#condomend_itemname").fadeIn('fast');
+
+              $("#condomend_itemname1").attr('name','');
+              $("#condomend_itemname2").attr('name','');
+              $("#condomend_itemname").attr('name','condomend_itemname');
+
+              
+
+              $("#condomend_sno").val(data[0].sno);
+              $("#condomend_row_id").val(data[0]._id);
+
+              $("#condomend_lab").val(data[0].lab);
+              $("#condomend_id").val(data[0]._id);
+
+              $("#condomend_itemname").val(data[0].itemname);
+
+              $("#condomend_date").val(data[0].date);
+
+              $("#condomend_specifications").val(data[0].specifications);
+              $("#condomend_supplier").val(data[0].supplier);
+              $("#condomend_address").val(data[0].address);
+              $("#condomend_invoice").val(data[0].invoice);
+              $("#condomend_unit").val(data[0].unit);
+
+              $("#condomend_quantity").val(data[0].quantity);
+              $("#condomend_quantity_hide").val(data[0].quantity);
+
+              $("#condomend_cost").val(data[0].cost);
+              $("#condomend_cost_hide").val(data[0].cost);
+
+              $("#condomend_pageno").val(data[0].pageno);
+              $("#condomend_remarks").val(data[0].remarks);
+            }
+          });
+      });
+
+    script.
+      $("#condomend_itemname1").change(function(){
+      var id = $(this).val();
+          $.post('/condomend_find_using_lab',{id:id}, function(data,textStatus,jqXHR){
+            $("#condomend_sno").val(data[0].sno);
+            $("#condomend_row_id").val(data[0]._id);
+
+            $("#condomend_lab").val(data[0].lab);
+            $("#condomend_lab1").val(data[0].condomendLab);
+            $("#condomend_id").val(data[0]._id);
+
+            $("#condomend_itemname2").val(data[0].itemname);
+
+            $("#condomend_date").val(data[0].date);
+
+            $("#condomend_specifications").val(data[0].specifications);
+            $("#condomend_supplier").val(data[0].supplier);
+            $("#condomend_address").val(data[0].address);
+            $("#condomend_invoice").val(data[0].invoice);
+            $("#condomend_unit").val(data[0].unit);
+
+            $("#condomend_quantity").val(data[0].quantity);
+            $("#condomend_quantity_hide").val(data[0].quantity);
+
+            $("#condomend_cost").val(data[0].cost);
+            $("#condomend_cost_hide").val(data[0].cost);
+
+            $("#condomend_pageno").val(data[0].pageno);
+            $("#condomend_remarks").val(data[0].remarks);
+          });
+      });
+
+
+    script.
+      $("#quantity, #unit").keyup(function(){
+        var quantity;
+        var single_cost;
+        var total_cost;
+
+        quantity      = $("#quantity").val();
+        single_cost   = $("#unit").val();
+        total_cost    = (quantity*single_cost);
+
+        $("#cost").val(Math.round(total_cost));
+      });
+    script.
+      $("#edit_quantity, #edit_unit").keyup(function(){
+        var quantity;
+        var single_cost;
+        var total_cost;
+
+        quantity      = $("#edit_quantity").val();
+        single_cost   = $("#edit_unit").val();
+        total_cost    = (quantity*single_cost);
+
+        $("#edit_cost").val(Math.round(total_cost));
+      });
+
+    script.
+      $("#transfer_quantity, #transfer_unit").keyup(function(){
+        var quantity;
+        var single_cost;
+        var total_cost;
+
+        quantity      = $("#transfer_quantity").val();
+        single_cost   = $("#transfer_unit").val();
+        total_cost    = (quantity*single_cost);
+
+        $("#transfer_cost").val(Math.round(total_cost));
+      });
+
+    script.
+      $("#condomend_quantity").keyup(function(){
+        var quantity;
+        var single_cost;
+        var total_cost;
+
+        quantity      = $("#condomend_quantity").val();
+        single_cost   = $("#condomend_unit").val();
+        total_cost    = (quantity*single_cost);
+
+        $("#condomend_cost").val(Math.round(total_cost));
+      });

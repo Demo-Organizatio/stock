@@ -1,0 +1,1565 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Dashboard')
+    meta(name='keyword', content='Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina')
+    title Stock Register
+    link(type='image/png', href='stockk.png', rel='icon')
+    // Bootstrap core CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    script(src='js/jquery-1.11.1.min.js')
+    script(src='js/bootstrap.min.js')
+    // external css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    // Custom styles for this template
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/style-responsive.css', rel='stylesheet')
+    // Data tables CSS
+    link(rel='stylesheet', type='text/css', href='css/buttons.dataTables.min.css')
+    link(rel='stylesheet', type='text/css', href='css/jquery.dataTables.min.css')    
+    link(href='css/dataTables.bootstrap.css', rel='stylesheet')
+    style.
+      .header, #sidebar {
+      background: #2C3E50;
+      }
+      .tab {
+          overflow: scroll;
+          border: 1px solid #ccc;
+          background-color: skyblue;
+          color:white;
+      }
+      .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          width:100%;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+          border-left:1px solid #ccc;
+      }
+      .tab button:hover {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+      .tab button:focus {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+
+      .tab .active button {
+          background-color: white;
+          color:skyblue;
+          font-weight:bold;
+      }
+      .header, #sidebar {
+      background: #2C3E50;
+      }
+      span {
+      font-size: 14px;
+      }
+      .file-uploader {
+      background-color: #dbefe9;
+      border-radius: 3px;
+      color: #242424;
+      }
+      .file-uploader__message-area {
+      font-size: 18px;
+      padding: 1em;
+      text-align: center;
+      color: #377a65;
+      }
+      .file-list {
+      background-color: white;
+      font-size: 16px;
+      }
+      .file-list__name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+      .file-list li {
+      height: 50px;
+      line-height: 50px;
+      margin-left: .5em;
+      border: none;
+      overflow: hidden;
+      }
+      .removal-button {
+      width: 20%;
+      border: none;
+      background-color: #d65d38;
+      color: white;
+      }
+      .removal-button::before {
+      content: "X";
+      }
+      .removal-button:focus {
+      outline: 0;
+      }
+      .file-chooser {
+      padding: 1em;
+      transition: background-color 1s, height 1s;
+      }
+      .file-chooser p {
+      font-size: 18px;
+      padding-top: 1em;
+      }
+      .file-uploader {
+      max-width: 400px;
+      height: auto;
+      margin: 2em auto;
+      }
+      .file-uploader * {
+      display: block;
+      }
+      .file-uploader input[type=submit] {
+      margin-top: 2em;
+      float: right;
+      }
+      .file-list {
+      margin: 0 auto;
+      max-width: 90%;
+      }
+      .file-list__name {
+      max-width: 70%;
+      float: left;
+      }
+      .removal-button {
+      display: inline-block;
+      height: 100%;
+      float: right;
+      }
+      .file-chooser {
+      width: 90%;
+      margin: .5em auto;
+      }
+      .file-chooser__input {
+      margin: 0 auto;
+      }
+      .file-uploader__submit-button {
+      width: 100%;
+      border: none;
+      font-size: 1.5em;
+      padding: 1em;
+      background-color: #72bfa7;
+      color: white;
+      }
+      .file-uploader__submit-button:hover {
+      background-color: #a7d7c8;
+      }
+      .file-list li:after, .file-uploader:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      .hidden {
+      display: none;
+      }
+      .hidden input {
+      display: none;
+      }
+      .error {
+      background-color: #d65d38;
+      color: white;
+      }
+      *, *::before, *::after {
+      box-sizing: border-box;
+      }
+      ul, li {
+      margin: 0;
+      padding: 0;
+      }
+      .personal_details {
+      background-color: white;
+      border-left:4px solid #fd9f1b;
+      }
+      .personal_details h3 {
+      padding: 10px;
+      }
+      #name {
+      color: #B4886B;
+      font-weight: bold;
+      float: left;
+      margin-left:20px;
+      font-size:15px;
+      }
+      #wd
+      {
+      margin-left: 10px;
+      font-weight: bold;
+      font-family: Arial;
+      }
+      .panel-box {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      border: medium none;
+      }
+      .bg-danger {
+      background-color: #FF7857 !important;
+      color: #FFF !important;
+      }
+      .danger-text {
+      color: #d15b3d;
+      }
+      .bg-lovender {
+      background-color: #8075C4 !important;
+      color: #FFF !important;
+      }
+      .lovender-text {
+      color: #6a5fb1;
+      }
+      .bg-info {
+      background-color: #7ACBEE !important;
+      color: #FFF !important;
+      }
+      .info-text {
+      color: #3ca0cb;
+      }
+      .size-h1 {
+      font-size: 20px;
+      }
+      .bg-success {
+      background-color: #A3C86D !important;
+      color: #FFF !important;
+      }
+      .bg-warning {
+      background-color: orange !important;
+      color: #FFF !important;
+      }
+      .bg-light {
+      background-color: lightblue !important;
+      color: #FFF !important;
+      }
+      .bg-lightgreen {
+      background-color: lightgreen !important;
+      color: #FFF !important;
+      }
+      .bg-default {
+      background-color: grey !important;
+      color: #FFF !important;
+      }
+      .bg-pink {
+      background-color: pink !important;
+      color: #FFF !important;
+      }
+      .bg-tomato {
+      background-color: tomato !important;
+      color: #FFF !important;
+      }
+      .bg-dodgerblue {
+      background-color: dodgerblue !important;
+      color: #FFF !important;
+      }
+      .bg-violet {
+      background-color: violet !important;
+      color: #FFF !important;
+      }
+      .success-text {
+      color: #82b33a;
+      }
+      .bg-danger {
+      background-color: #FF7857 !important;
+      color: #FFF !important;
+      }
+      .danger-text {
+      color: #d15b3d;
+      }
+      
+      .panel-box .panel-icon {
+      display: table-cell;
+      padding: px;
+      width: 1%;
+      vertical-align: top;
+      border-radius: 0px;
+      text-align: center;
+      /*border-bottom: 1px solid #fcfcfc;
+      border-top: 1px solid #fcfcfc;
+      border-right: 1px solid #fcfcfc;*/
+      }
+      .panel-box .size-h1 {
+      margin-top:7px;
+      }
+      .panel-box .fa {
+      margin-top:9px;
+      }
+      .bg-lovender {
+      background-color: #8075C4 !important;
+      color: #FFF !important;
+      }
+      .lovender-text {
+      color: #6a5fb1;
+      }
+      .capitalize {
+      text-transform: capitalize;
+      }
+      .uppercase {
+      text-transform: uppercase;
+      }
+
+
+  style.
+    .data{
+    font-weight: bold;
+    }
+  body
+    section#container
+      // header start
+      header.header.black-bg
+        .sidebar-toggle-box
+          .fa.fa-bars.tooltips(data-placement='right', data-original-title='Toggle Navigation')
+        // logo start
+        a.logo(href='#')
+          b
+            img(src='myhub_logo.png',style='height:55px;width:100px;margin-top:-13px')
+        // logo end
+        .top-menu
+          ul.nav.pull-right.top-menu
+            li
+              a.logout(href='adminlogout') Logout
+      // header end
+      // sidebar start
+      aside
+        #sidebar.nav-collapse
+          // sidebar menu start
+          ul#nav-accordion.sidebar-menu
+            p.centered
+              a(href='#')
+                img.img-circle(src='stockk.png', width='80')
+            h5.centered 
+              p Admin
+            li.active
+              a(data-toggle='tab', href='#dashboard')
+                i.fa.fa-dashboard
+                span Dashboard
+            li
+              a(data-toggle='tab', href='#all')
+                i.fa.fa-list
+                span All Labs
+            li.sub-menu
+              a(data-toggle="tab", href="#contact")
+                i.fa.fa-phone
+                span Contact Us        
+          // sidebar menu end
+      // sidebar end
+      // main content start
+      section#main-content
+        section.wrapper.site-min-height
+          .row.mt
+            .col-md-12
+              .tab-content
+                #all.tab-pane.fade.align
+                  center
+                    .container(style="width:100%;")
+                      .row.col-md-12
+                        ul.nav.nav-tabs.nav-justified.tab
+                          li
+                            button(data-toggle='pill', href='#aec') AEC
+                          li
+                            button(data-toggle='pill', href='#acet') ACET
+                          li 
+                            button(data-toggle='pill', href='#ace') ACE
+                        .tab-content
+                          #aec.tab-pane.fade.in.active
+                            center
+                              .container(style="width:100%;")
+                                .row.col-md-12
+                                  ul.nav.nav-tabs.nav-justified.tab
+                                    -function cleanup(arr, prop) {
+                                      -var new_arr = [];
+                                      -var lookup  = {};
+                                      -for (var i in arr) {
+                                        -lookup[arr[i][prop]] = arr[i];
+                                      -}
+                                      -for (i in lookup) {
+                                        -new_arr.push(lookup[i]);
+                                      -}
+                                      -return new_arr;
+                                    -}
+                                    -var n = cleanup(newdata, 'lab');
+                                    -var default_lab = JSON.parse(JSON.stringify(n));
+                                      - for(var j = 0; j < n.length; j++){
+                                        -var labNew = n.lab;
+                                        -for(var a=0; a<=j; a++){
+                                          if default_lab!=n[a].lab && n[a] != labNew
+                                            if n[j].lab!=check
+                                              li(style='height:130px')
+                                                button(style='height:130px', data-toggle='pill', href='#laps'+j) #{n[j].lab}
+                                                //- default_lab=n[j].lab;
+                                                -check = n[j].lab
+                                        -}
+                                      -}
+                                  .tab-content
+                                    -var btn_inc = 0;
+                                    -var data_inc = 0;
+                                    -var c = 0;
+                                    -var ar = new Array(); ar[0] = 'Stock'; ar[1] = 'Transfered'; ar[2] = 'Received'; ar[3] = 'Condemned';
+                                    -for(var m = 0; m < n.length; m++)
+                                      --c++;
+                                      div(id='laps'+m).tab-pane.fade.align
+                                        ul.nav.nav-tabs.nav-justified.tab
+                                          -var default_type = "";
+                                            -for(var p = 0; p < ar.length; p++){
+                                              -btn_inc++;
+                                                li
+                                                  button(data-toggle='pill', href='#sub'+btn_inc) #{ar[p]}
+                                            -} 
+                                          li
+                                            button(data-toggle='pill', href='#con'+c) Total
+                                        .tab-content
+                                          #demo
+                                          -var final = 0;
+                                            -for(var i = 0; i < ar.length; i++)
+                                              //-final = parseInt(final)+parseInt(newdata[i].cost);
+                                              -data_inc++;
+                                                div(id='sub'+data_inc).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th College
+                                                              th Branch
+                                                                if i==0
+                                                                  th Lab
+                                                                if i==1
+                                                                  th Lab
+                                                                  th Transfered To
+                                                                  th Transfered Date
+                                                                if i==2
+                                                                  th Lab
+                                                                  th Recieve From
+                                                                  th Recieved Date
+                                                                if i==3
+                                                                  th lab
+                                                                  th Condemned Date
+                                                              th Date of Reciept
+                                                              th Item Name
+                                                              th Specifications
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Invoice No
+                                                              th Cost per unit
+                                                              th Quantity
+                                                              th Total Cost
+                                                              th Page No
+                                                              th Remarks
+                                                          tbody
+                                                            -var stock = 0;
+                                                            if i==0
+                                                              - for(var k = 0; k < newdata.length; k++){
+                                                                if n[m].lab==newdata[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata[k].sno}
+                                                                    td #{newdata[k].college}
+                                                                    td #{newdata[k].branch}
+                                                                    td #{newdata[k].lab}
+                                                                    td #{newdata[k].date}
+                                                                    td #{newdata[k].itemname}
+                                                                    td #{newdata[k].specifications}
+                                                                    td #{newdata[k].supplier}
+                                                                    td #{newdata[k].address}
+                                                                    td #{newdata[k].invoice}
+                                                                    td #{newdata[k].unit}
+                                                                    td #{newdata[k].quantity}
+                                                                    td #{newdata[k].cost}
+                                                                    td #{newdata[k].pageno}
+                                                                    td #{newdata[k].remarks}
+                                                                  -stock = parseInt(stock)+parseInt(newdata[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label STOCK COST : #{stock}
+                                                            -var transfer = 0;
+                                                            if i==1
+                                                              - for(var k = 0; k < transferstock.length; k++){
+                                                                if n[m].lab==transferstock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock[k].sno}
+                                                                    td #{transferstock[k].college}
+                                                                    td #{transferstock[k].branch}
+                                                                    td #{transferstock[k].lab}
+                                                                    td #{transferstock[k].transferLab}
+                                                                    td #{transferstock[k].transferDate}
+                                                                    td #{transferstock[k].date}
+                                                                    td #{transferstock[k].itemname}
+                                                                    td #{transferstock[k].specifications}
+                                                                    td #{transferstock[k].supplier}
+                                                                    td #{transferstock[k].address}
+                                                                    td #{transferstock[k].invoice}
+                                                                    td #{transferstock[k].unit}
+                                                                    td #{transferstock[k].transferQuantity}
+                                                                    td #{transferstock[k].transferCost}
+                                                                    td #{transferstock[k].pageno}
+                                                                    td #{transferstock[k].remarks}
+                                                                  -transfer = parseInt(transfer)+parseInt(transferstock[k].transferCost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TRANSFER COST : #{transfer}
+                                                            -var recieved = 0;
+                                                            if i==2
+                                                              - for(var k = 0; k < recievestock.length; k++){
+                                                                if n[m].lab==recievestock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock[k].sno}
+                                                                    td #{recievestock[k].college}
+                                                                    td #{recievestock[k].branch}
+                                                                    td #{recievestock[k].lab}
+                                                                    td #{recievestock[k].transferdLab}
+                                                                    td #{recievestock[k].recievedDate}
+                                                                    td #{recievestock[k].date}
+                                                                    td #{recievestock[k].itemname}
+                                                                    td #{recievestock[k].specifications}
+                                                                    td #{recievestock[k].supplier}
+                                                                    td #{recievestock[k].address}
+                                                                    td #{recievestock[k].invoice}
+                                                                    td #{recievestock[k].unit}
+                                                                    td #{recievestock[k].quantity}
+                                                                    td #{recievestock[k].cost}
+                                                                    td #{recievestock[k].pageno}
+                                                                    td #{recievestock[k].remarks}
+                                                                  -recieved = parseInt(recieved)+parseInt(recievestock[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label RECIEVED COST : #{recieved}
+                                                            -var condomed = 0;
+                                                            if i==3
+                                                              - for(var k = 0; k < condomedstock.length; k++){
+                                                                if n[m].lab==condomedstock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock[k].sno}
+                                                                    td #{condomedstock[k].college}
+                                                                    td #{condomedstock[k].branch}
+                                                                    td #{condomedstock[k].lab}
+                                                                    td #{condomedstock[k].condomendDate}
+                                                                    td #{condomedstock[k].date}
+                                                                    td #{condomedstock[k].itemname}
+                                                                    td #{condomedstock[k].specifications}
+                                                                    td #{condomedstock[k].supplier}
+                                                                    td #{condomedstock[k].address}
+                                                                    td #{condomedstock[k].invoice}
+                                                                    td #{condomedstock[k].unit}
+                                                                    td #{condomedstock[k].quantity}
+                                                                    td #{condomedstock[k].cost}
+                                                                    td #{condomedstock[k].pageno}
+                                                                    td #{condomedstock[k].remarks}
+                                                                  -condomed = parseInt(condomed)+parseInt(condomedstock[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label CONDEMNED COST : #{condomed}
+                                                div(id='con'+c).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th Item Name
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Type
+                                                              th Quantity
+                                                              th Cost
+                                                              th Page No
+                                                              th Invoice No
+                                                              th Department
+                                                              th Lab
+                                                              th Transfer Lab
+                                                              th Recieve Lab
+                                                              th College
+                                                              th Date of Recieve
+                                                              th Date of Transfer
+                                                              th Date of Reciept
+                                                              th Condemned date
+                                                              th Remarks
+                                                          tbody
+                                                            -var total_this_lab = 0;
+                                                              - for(var k = 0; k < newdata.length; k++){
+                                                                if n[m].lab==newdata[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata[k].sno}
+                                                                    td #{newdata[k].itemname}
+                                                                    td #{newdata[k].supplier}
+                                                                    td #{newdata[k].address}
+                                                                    td.text-center
+                                                                      label.text-info Stock
+                                                                    td #{newdata[k].quantity}
+                                                                    td #{newdata[k].cost}
+                                                                    td #{newdata[k].pageno}
+                                                                    td #{newdata[k].invoice}
+                                                                    td #{newdata[k].branch}
+                                                                    td #{newdata[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata[k].date}
+                                                                    td -
+                                                                    td #{newdata[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(newdata[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < transferstock.length; k++){
+                                                                if n[m].lab==transferstock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock[k].sno}
+                                                                    td #{transferstock[k].itemname}
+                                                                    td #{transferstock[k].supplier}
+                                                                    td #{transferstock[k].address}
+                                                                    td.text-center
+                                                                      label.text-warning Transfer
+                                                                    td #{transferstock[k].transferQuantity}
+                                                                    td #{transferstock[k].transferCost}
+                                                                    td #{transferstock[k].pageno}
+                                                                    td #{transferstock[k].invoice}
+                                                                    td #{transferstock[k].branch}
+                                                                    td -
+                                                                    td #{transferstock[k].transferLab}
+                                                                    td -
+                                                                    td #{transferstock[k].college}
+                                                                    td -
+                                                                    td #{transferstock[k].transferDate}
+                                                                    td #{transferstock[k].date}
+                                                                    td -
+                                                                    td #{transferstock[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(transferstock[k].transferCost);
+                                                              -}
+                                                              - for(var k = 0; k < recievestock.length; k++){
+                                                                if n[m].lab==recievestock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock[k].sno}
+                                                                    td #{recievestock[k].itemname}
+                                                                    td #{recievestock[k].supplier}
+                                                                    td #{recievestock[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Recieved
+                                                                    td #{recievestock[k].quantity}
+                                                                    td #{recievestock[k].cost}
+                                                                    td #{recievestock[k].pageno}
+                                                                    td #{recievestock[k].invoice}
+                                                                    td #{recievestock[k].branch}
+                                                                    td -
+                                                                    td #{recievestock[k].transferdLab}
+                                                                    td #{recievestock[k].lab}
+                                                                    td #{recievestock[k].college}
+                                                                    td #{recievestock[k].date}
+                                                                    td -
+                                                                    td #{recievestock[k].date}
+                                                                    td -
+                                                                    td #{recievestock[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(recievestock[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < condomedstock.length; k++){
+                                                                if n[m].lab==condomedstock[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock[k].sno}
+                                                                    td #{condomedstock[k].itemname}
+                                                                    td #{condomedstock[k].supplier}
+                                                                    td #{condomedstock[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Condemned
+                                                                    td #{condomedstock[k].quantity}
+                                                                    td #{condomedstock[k].cost}
+                                                                    td #{condomedstock[k].pageno}
+                                                                    td #{condomedstock[k].invoice}
+                                                                    td #{condomedstock[k].branch}
+                                                                    td #{condomedstock[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock[k].date}
+                                                                    td #{condomedstock[k].condomendDate}
+                                                                    td #{condomedstock[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(condomedstock[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TOTAL COST : #{total_this_lab}
+                          #acet.tab-pane.fade.align
+                            center
+                              .container(style="width:100%;")
+                                .row.col-md-12
+                                  ul.nav.nav-tabs.nav-justified.tab
+                                    -function cleanup(arr, prop) {
+                                      -var new_arr = [];
+                                      -var lookup  = {};
+                                      -for (var i in arr) {
+                                        -lookup[arr[i][prop]] = arr[i];
+                                      -}
+                                      -for (i in lookup) {
+                                        -new_arr.push(lookup[i]);
+                                      -}
+                                      -return new_arr;
+                                    -}
+                                    -var n1 = cleanup(newdata1, 'lab');
+                                    -var default_lab = JSON.parse(JSON.stringify(n1));
+                                      - for(var j = 0; j < n1.length; j++){
+                                        -var labNew = n1.lab;
+                                        -for(var a=0; a<=j; a++){
+                                          if default_lab!=n1[a].lab && n1[a] != labNew
+                                            if n1[j].lab!=check
+                                              li(style='height:130px')
+                                                button(style='height:130px', data-toggle='pill', href='#laps11'+j) #{n1[j].lab}
+                                                //- default_lab=n[j].lab;
+                                                -check = n1[j].lab
+                                        -}
+                                      -}
+                                  .tab-content
+                                    -var btn_inc1 = 0;
+                                    -var data_inc1 = 0;
+                                    -var c1 = 0;
+                                    -var ar1 = new Array(); ar1[0] = 'Stock'; ar1[1] = 'Transfered'; ar1[2] = 'Received'; ar1[3] = 'Condemned';
+                                    -for(var m = 0; m < n1.length; m++)
+                                      --c++;
+                                      #laps110.tab-pane.fade.align
+                                        ul.nav.nav-tabs.nav-justified.tab
+                                          -var default_type = "";
+                                            -for(var p = 0; p < ar1.length; p++){
+                                              -btn_inc1++;
+                                                li
+                                                  button(data-toggle='pill', href='#suba1'+btn_inc1) #{ar1[p]}
+                                            -} 
+                                          li
+                                            button(data-toggle='pill', href='#cona1'+c) Total
+                                        .tab-content
+                                          #demo
+                                          -var final = 0;
+                                            -for(var i = 0; i < ar1.length; i++)
+                                              //-final = parseInt(final)+parseInt(newdata1[i].cost);
+                                              -data_inc1++;
+                                                div(id='suba1'+data_inc1).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th College
+                                                              th Branch
+                                                                if i==0
+                                                                  th Lab
+                                                                if i==1
+                                                                  th Lab
+                                                                  th Transfered To
+                                                                  th Transfered Date
+                                                                if i==2
+                                                                  th Lab
+                                                                  th Recieve From
+                                                                  th Recieved Date
+                                                                if i==3
+                                                                  th lab
+                                                                  th Condemned Date
+                                                              th Date of Reciept
+                                                              th Item Name
+                                                              th Specifications
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Invoice No
+                                                              th Cost per unit
+                                                              th Quantity
+                                                              th Total Cost
+                                                              th Page No
+                                                              th Remarks
+                                                          tbody
+                                                            -var stock = 0;
+                                                            if i==0
+                                                              - for(var k = 0; k < newdata1.length; k++){
+                                                                if n1[m].lab==newdata1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata1[k].sno}
+                                                                    td #{newdata1[k].college}
+                                                                    td #{newdata1[k].branch}
+                                                                    td #{newdata1[k].lab}
+                                                                    td #{newdata1[k].date}
+                                                                    td #{newdata1[k].itemname}
+                                                                    td #{newdata1[k].specifications}
+                                                                    td #{newdata1[k].supplier}
+                                                                    td #{newdata1[k].address}
+                                                                    td #{newdata1[k].invoice}
+                                                                    td #{newdata1[k].unit}
+                                                                    td #{newdata1[k].quantity}
+                                                                    td #{newdata1[k].cost}
+                                                                    td #{newdata1[k].pageno}
+                                                                    td #{newdata1[k].remarks}
+                                                                  -stock = parseInt(stock)+parseInt(newdata1[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label STOCK COST : #{stock}
+                                                            -var transfer = 0;
+                                                            if i==1
+                                                              - for(var k = 0; k < transferstock1.length; k++){
+                                                                if n1[m].lab==transferstock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock1[k].sno}
+                                                                    td #{transferstock1[k].college}
+                                                                    td #{transferstock1[k].branch}
+                                                                    td #{transferstock1[k].lab}
+                                                                    td #{transferstock1[k].transferLab}
+                                                                    td #{transferstock1[k].transferDate}
+                                                                    td #{transferstock1[k].date}
+                                                                    td #{transferstock1[k].itemname}
+                                                                    td #{transferstock1[k].specifications}
+                                                                    td #{transferstock1[k].supplier}
+                                                                    td #{transferstock1[k].address}
+                                                                    td #{transferstock1[k].invoice}
+                                                                    td #{transferstock1[k].unit}
+                                                                    td #{transferstock1[k].transferQuantity}
+                                                                    td #{transferstock1[k].transferCost}
+                                                                    td #{transferstock1[k].pageno}
+                                                                    td #{transferstock1[k].remarks}
+                                                                  -transfer = parseInt(transfer)+parseInt(transferstock1[k].transferCost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TRANSFER COST : #{transfer}
+                                                            -var recieved = 0;
+                                                            if i==2
+                                                              - for(var k = 0; k < recievestock1.length; k++){
+                                                                if n1[m].lab==recievestock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock1[k].sno}
+                                                                    td #{recievestock1[k].college}
+                                                                    td #{recievestock1[k].branch}
+                                                                    td #{recievestock1[k].lab}
+                                                                    td #{recievestock1[k].transferdLab}
+                                                                    td #{recievestock1[k].recievedDate}
+                                                                    td #{recievestock1[k].date}
+                                                                    td #{recievestock1[k].itemname}
+                                                                    td #{recievestock1[k].specifications}
+                                                                    td #{recievestock1[k].supplier}
+                                                                    td #{recievestock1[k].address}
+                                                                    td #{recievestock1[k].invoice}
+                                                                    td #{recievestock1[k].unit}
+                                                                    td #{recievestock1[k].quantity}
+                                                                    td #{recievestock1[k].cost}
+                                                                    td #{recievestock1[k].pageno}
+                                                                    td #{recievestock1[k].remarks}
+                                                                  -recieved = parseInt(recieved)+parseInt(recievestock1[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label RECIEVED COST : #{recieved}
+                                                            -var condomed = 0;
+                                                            if i==3
+                                                              - for(var k = 0; k < condomedstock1.length; k++){
+                                                                if n1[m].lab==condomedstock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock1[k].sno}
+                                                                    td #{condomedstock1[k].college}
+                                                                    td #{condomedstock1[k].branch}
+                                                                    td #{condomedstock1[k].lab}
+                                                                    td #{condomedstock1[k].condomendDate}
+                                                                    td #{condomedstock1[k].date}
+                                                                    td #{condomedstock1[k].itemname}
+                                                                    td #{condomedstock1[k].specifications}
+                                                                    td #{condomedstock1[k].supplier}
+                                                                    td #{condomedstock1[k].address}
+                                                                    td #{condomedstock1[k].invoice}
+                                                                    td #{condomedstock1[k].unit}
+                                                                    td #{condomedstock1[k].quantity}
+                                                                    td #{condomedstock1[k].cost}
+                                                                    td #{condomedstock1[k].pageno}
+                                                                    td #{condomedstock1[k].remarks}
+                                                                  -condomed = parseInt(condomed)+parseInt(condomedstock1[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label CONDEMNED COST : #{condomed}
+                                                div(id='cona1'+c).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th Item Name
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Type
+                                                              th Quantity
+                                                              th Cost
+                                                              th Page No
+                                                              th Invoice No
+                                                              th Department
+                                                              th Lab
+                                                              th Transfer Lab
+                                                              th Recieve Lab
+                                                              th College
+                                                              th Date of Recieve
+                                                              th Date of Transfer
+                                                              th Date of Reciept
+                                                              th Condemned date
+                                                              th Remarks
+                                                          tbody
+                                                            -var total_this_lab = 0;
+                                                              - for(var k = 0; k < newdata1.length; k++){
+                                                                if n1[m].lab==newdata1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata1[k].sno}
+                                                                    td #{newdata1[k].itemname}
+                                                                    td #{newdata1[k].supplier}
+                                                                    td #{newdata1[k].address}
+                                                                    td.text-center
+                                                                      label.text-info Stock
+                                                                    td #{newdata1[k].quantity}
+                                                                    td #{newdata1[k].cost}
+                                                                    td #{newdata1[k].pageno}
+                                                                    td #{newdata1[k].invoice}
+                                                                    td #{newdata1[k].branch}
+                                                                    td #{newdata1[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata1[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata1[k].date}
+                                                                    td -
+                                                                    td #{newdata1[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(newdata1[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < transferstock1.length; k++){
+                                                                if n1[m].lab==transferstock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock1[k].sno}
+                                                                    td #{transferstock1[k].itemname}
+                                                                    td #{transferstock1[k].supplier}
+                                                                    td #{transferstock1[k].address}
+                                                                    td.text-center
+                                                                      label.text-warning Transfer
+                                                                    td #{transferstock1[k].transferQuantity}
+                                                                    td #{transferstock1[k].transferCost}
+                                                                    td #{transferstock1[k].pageno}
+                                                                    td #{transferstock1[k].invoice}
+                                                                    td #{transferstock1[k].branch}
+                                                                    td -
+                                                                    td #{transferstock1[k].transferLab}
+                                                                    td -
+                                                                    td #{transferstock1[k].college}
+                                                                    td -
+                                                                    td #{transferstock1[k].transferDate}
+                                                                    td #{transferstock1[k].date}
+                                                                    td -
+                                                                    td #{transferstock1[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(transferstock1[k].transferCost);
+                                                              -}
+                                                              - for(var k = 0; k < recievestock1.length; k++){
+                                                                if n1[m].lab==recievestock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock1[k].sno}
+                                                                    td #{recievestock1[k].itemname}
+                                                                    td #{recievestock1[k].supplier}
+                                                                    td #{recievestock1[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Recieved
+                                                                    td #{recievestock1[k].quantity}
+                                                                    td #{recievestock1[k].cost}
+                                                                    td #{recievestock1[k].pageno}
+                                                                    td #{recievestock1[k].invoice}
+                                                                    td #{recievestock1[k].branch}
+                                                                    td -
+                                                                    td #{recievestock1[k].transferdLab}
+                                                                    td #{recievestock1[k].lab}
+                                                                    td #{recievestock1[k].college}
+                                                                    td #{recievestock1[k].date}
+                                                                    td -
+                                                                    td #{recievestock1[k].date}
+                                                                    td -
+                                                                    td #{recievestock1[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(recievestock1[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < condomedstock1.length; k++){
+                                                                if n1[m].lab==condomedstock1[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock1[k].sno}
+                                                                    td #{condomedstock1[k].itemname}
+                                                                    td #{condomedstock1[k].supplier}
+                                                                    td #{condomedstock1[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Condemned
+                                                                    td #{condomedstock1[k].quantity}
+                                                                    td #{condomedstock1[k].cost}
+                                                                    td #{condomedstock1[k].pageno}
+                                                                    td #{condomedstock1[k].invoice}
+                                                                    td #{condomedstock1[k].branch}
+                                                                    td #{condomedstock1[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock1[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock1[k].date}
+                                                                    td #{condomedstock1[k].condomendDate}
+                                                                    td #{condomedstock1[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(condomedstock1[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TOTAL COST : #{total_this_lab}
+                          #ace.tab-pane.fade.align
+                            center
+                              .container(style="width:100%;")
+                                .row.col-md-12
+                                  ul.nav.nav-tabs.nav-justified.tab
+                                    -function cleanup(arr, prop) {
+                                      -var new_arr = [];
+                                      -var lookup  = {};
+                                      -for (var i in arr) {
+                                        -lookup[arr[i][prop]] = arr[i];
+                                      -}
+                                      -for (i in lookup) {
+                                        -new_arr.push(lookup[i]);
+                                      -}
+                                      -return new_arr;
+                                    -}
+                                    -var n2 = cleanup(newdata2, 'lab');
+                                    -var default_lab = JSON.parse(JSON.stringify(n2));
+                                      - for(var j = 0; j < n2.length; j++){
+                                        -var labNew = n2.lab;
+                                        -for(var a=0; a<=j; a++){
+                                          if default_lab!=n2[a].lab && n2[a] != labNew
+                                            if n2[j].lab!=check
+                                              li(style='height:130px')
+                                                button(style='height:130px', data-toggle='pill', href='#laps22'+j) #{n2[j].lab}
+                                                //- default_lab=n[j].lab;
+                                                -check = n2[j].lab
+                                        -}
+                                      -}
+                                  .tab-content
+                                    -var btn_inc2 = 0;
+                                    -var data_inc2 = 0;
+                                    -var c2 = 0;
+                                    -var ar2 = new Array(); ar2[0] = 'Stock'; ar2[1] = 'Transfered'; ar2[2] = 'Received'; ar2[3] = 'Condemned';
+                                    -for(var m = 0; m < n.length; m++)
+                                      --c++;
+                                      div(id='laps22'+m).tab-pane.fade.align
+                                        ul.nav.nav-tabs.nav-justified.tab
+                                          -var default_type = "";
+                                            -for(var p = 0; p < ar2.length; p++){
+                                              -btn_inc2++;
+                                                li
+                                                  button(data-toggle='pill', href='#suba2'+btn_inc2) #{ar2[p]}
+                                            -} 
+                                          li
+                                            button(data-toggle='pill', href='#cona2'+c) Total
+                                        .tab-content
+                                          #demo
+                                          -var final = 0;
+                                            -for(var i = 0; i < ar2.length; i++)
+                                              //-final = parseInt(final)+parseInt(newdata2[i].cost);
+                                              -data_inc2++;
+                                                div(id='suba2'+data_inc2).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th College
+                                                              th Branch
+                                                                if i==0
+                                                                  th Lab
+                                                                if i==1
+                                                                  th Lab
+                                                                  th Transfered To
+                                                                  th Transfered Date
+                                                                if i==2
+                                                                  th Lab
+                                                                  th Recieve From
+                                                                  th Recieved Date
+                                                                if i==3
+                                                                  th lab
+                                                                  th Condemned Date
+                                                              th Date of Reciept
+                                                              th Item Name
+                                                              th Specifications
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Invoice No
+                                                              th Cost per unit
+                                                              th Quantity
+                                                              th Total Cost
+                                                              th Page No
+                                                              th Remarks
+                                                          tbody
+                                                            -var stock = 0;
+                                                            if i==0
+                                                              - for(var k = 0; k < newdata2.length; k++){
+                                                                if n1[m].lab==newdata2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata2[k].sno}
+                                                                    td #{newdata2[k].college}
+                                                                    td #{newdata2[k].branch}
+                                                                    td #{newdata2[k].lab}
+                                                                    td #{newdata2[k].date}
+                                                                    td #{newdata2[k].itemname}
+                                                                    td #{newdata2[k].specifications}
+                                                                    td #{newdata2[k].supplier}
+                                                                    td #{newdata2[k].address}
+                                                                    td #{newdata2[k].invoice}
+                                                                    td #{newdata2[k].unit}
+                                                                    td #{newdata2[k].quantity}
+                                                                    td #{newdata2[k].cost}
+                                                                    td #{newdata2[k].pageno}
+                                                                    td #{newdata2[k].remarks}
+                                                                  -stock = parseInt(stock)+parseInt(newdata2[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label STOCK COST : #{stock}
+                                                            -var transfer = 0;
+                                                            if i==1
+                                                              - for(var k = 0; k < transferstock2.length; k++){
+                                                                if n1[m].lab==transferstock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock2[k].sno}
+                                                                    td #{transferstock2[k].college}
+                                                                    td #{transferstock2[k].branch}
+                                                                    td #{transferstock2[k].lab}
+                                                                    td #{transferstock2[k].transferLab}
+                                                                    td #{transferstock2[k].transferDate}
+                                                                    td #{transferstock2[k].date}
+                                                                    td #{transferstock2[k].itemname}
+                                                                    td #{transferstock2[k].specifications}
+                                                                    td #{transferstock2[k].supplier}
+                                                                    td #{transferstock2[k].address}
+                                                                    td #{transferstock2[k].invoice}
+                                                                    td #{transferstock2[k].unit}
+                                                                    td #{transferstock2[k].transferQuantity}
+                                                                    td #{transferstock2[k].transferCost}
+                                                                    td #{transferstock2[k].pageno}
+                                                                    td #{transferstock2[k].remarks}
+                                                                  -transfer = parseInt(transfer)+parseInt(transferstock2[k].transferCost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TRANSFER COST : #{transfer}
+                                                            -var recieved = 0;
+                                                            if i==2
+                                                              - for(var k = 0; k < recievestock2.length; k++){
+                                                                if n1[m].lab==recievestock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock2[k].sno}
+                                                                    td #{recievestock2[k].college}
+                                                                    td #{recievestock2[k].branch}
+                                                                    td #{recievestock2[k].lab}
+                                                                    td #{recievestock2[k].transferdLab}
+                                                                    td #{recievestock2[k].recievedDate}
+                                                                    td #{recievestock2[k].date}
+                                                                    td #{recievestock2[k].itemname}
+                                                                    td #{recievestock2[k].specifications}
+                                                                    td #{recievestock2[k].supplier}
+                                                                    td #{recievestock2[k].address}
+                                                                    td #{recievestock2[k].invoice}
+                                                                    td #{recievestock2[k].unit}
+                                                                    td #{recievestock2[k].quantity}
+                                                                    td #{recievestock2[k].cost}
+                                                                    td #{recievestock2[k].pageno}
+                                                                    td #{recievestock2[k].remarks}
+                                                                  -recieved = parseInt(recieved)+parseInt(recievestock2[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label RECIEVED COST : #{recieved}
+                                                            -var condomed = 0;
+                                                            if i==3
+                                                              - for(var k = 0; k < condomedstock2.length; k++){
+                                                                if n1[m].lab==condomedstock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock2[k].sno}
+                                                                    td #{condomedstock2[k].college}
+                                                                    td #{condomedstock2[k].branch}
+                                                                    td #{condomedstock2[k].lab}
+                                                                    td #{condomedstock2[k].condomendDate}
+                                                                    td #{condomedstock2[k].date}
+                                                                    td #{condomedstock2[k].itemname}
+                                                                    td #{condomedstock2[k].specifications}
+                                                                    td #{condomedstock2[k].supplier}
+                                                                    td #{condomedstock2[k].address}
+                                                                    td #{condomedstock2[k].invoice}
+                                                                    td #{condomedstock2[k].unit}
+                                                                    td #{condomedstock2[k].quantity}
+                                                                    td #{condomedstock2[k].cost}
+                                                                    td #{condomedstock2[k].pageno}
+                                                                    td #{condomedstock2[k].remarks}
+                                                                  -condomed = parseInt(condomed)+parseInt(condomedstock2[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label CONDEMNED COST : #{condomed}
+                                                div(id='cona2'+c).tab-pane.fade.align
+                                                  .col-lg-12
+                                                  .panel.panel-default
+                                                    .panel-body
+                                                      .table-responsive
+                                                        table.dataTables-example.table.table-striped.table-bordered.table-hover
+                                                          thead
+                                                            tr
+                                                              //th S.No
+                                                              th Item Name
+                                                              th Supplier Name
+                                                              th Supplier Address
+                                                              th Type
+                                                              th Quantity
+                                                              th Cost
+                                                              th Page No
+                                                              th Invoice No
+                                                              th Department
+                                                              th Lab
+                                                              th Transfer Lab
+                                                              th Recieve Lab
+                                                              th College
+                                                              th Date of Recieve
+                                                              th Date of Transfer
+                                                              th Date of Reciept
+                                                              th Condemned date
+                                                              th Remarks
+                                                          tbody
+                                                            -var total_this_lab = 0;
+                                                              - for(var k = 0; k < newdata2.length; k++){
+                                                                if n1[m].lab==newdata2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{newdata2[k].sno}
+                                                                    td #{newdata2[k].itemname}
+                                                                    td #{newdata2[k].supplier}
+                                                                    td #{newdata2[k].address}
+                                                                    td.text-center
+                                                                      label.text-info Stock
+                                                                    td #{newdata2[k].quantity}
+                                                                    td #{newdata2[k].cost}
+                                                                    td #{newdata2[k].pageno}
+                                                                    td #{newdata2[k].invoice}
+                                                                    td #{newdata2[k].branch}
+                                                                    td #{newdata2[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata2[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{newdata2[k].date}
+                                                                    td -
+                                                                    td #{newdata2[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(newdata2[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < transferstock2.length; k++){
+                                                                if n1[m].lab==transferstock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{transferstock2[k].sno}
+                                                                    td #{transferstock2[k].itemname}
+                                                                    td #{transferstock2[k].supplier}
+                                                                    td #{transferstock2[k].address}
+                                                                    td.text-center
+                                                                      label.text-warning Transfer
+                                                                    td #{transferstock2[k].transferQuantity}
+                                                                    td #{transferstock2[k].transferCost}
+                                                                    td #{transferstock2[k].pageno}
+                                                                    td #{transferstock2[k].invoice}
+                                                                    td #{transferstock2[k].branch}
+                                                                    td -
+                                                                    td #{transferstock2[k].transferLab}
+                                                                    td -
+                                                                    td #{transferstock2[k].college}
+                                                                    td -
+                                                                    td #{transferstock2[k].transferDate}
+                                                                    td #{transferstock2[k].date}
+                                                                    td -
+                                                                    td #{transferstock2[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(transferstock2[k].transferCost);
+                                                              -}
+                                                              - for(var k = 0; k < recievestock2.length; k++){
+                                                                if n1[m].lab==recievestock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{recievestock2[k].sno}
+                                                                    td #{recievestock2[k].itemname}
+                                                                    td #{recievestock2[k].supplier}
+                                                                    td #{recievestock2[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Recieved
+                                                                    td #{recievestock2[k].quantity}
+                                                                    td #{recievestock2[k].cost}
+                                                                    td #{recievestock2[k].pageno}
+                                                                    td #{recievestock2[k].invoice}
+                                                                    td #{recievestock2[k].branch}
+                                                                    td -
+                                                                    td #{recievestock2[k].transferdLab}
+                                                                    td #{recievestock2[k].lab}
+                                                                    td #{recievestock2[k].college}
+                                                                    td #{recievestock2[k].date}
+                                                                    td -
+                                                                    td #{recievestock2[k].date}
+                                                                    td -
+                                                                    td #{recievestock2[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(recievestock2[k].cost);
+                                                              -}
+                                                              - for(var k = 0; k < condomedstock2.length; k++){
+                                                                if n1[m].lab==condomedstock2[k].lab
+                                                                  tr.odd.gradeA
+                                                                    //td #{condomedstock2[k].sno}
+                                                                    td #{condomedstock2[k].itemname}
+                                                                    td #{condomedstock2[k].supplier}
+                                                                    td #{condomedstock2[k].address}
+                                                                    td.text-center
+                                                                      label.text-danger Condemned
+                                                                    td #{condomedstock2[k].quantity}
+                                                                    td #{condomedstock2[k].cost}
+                                                                    td #{condomedstock2[k].pageno}
+                                                                    td #{condomedstock2[k].invoice}
+                                                                    td #{condomedstock2[k].branch}
+                                                                    td #{condomedstock2[k].lab}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock2[k].college}
+                                                                    td -
+                                                                    td -
+                                                                    td #{condomedstock2[k].date}
+                                                                    td #{condomedstock2[k].condomendDate}
+                                                                    td #{condomedstock2[k].remarks}
+                                                                  -total_this_lab = parseInt(total_this_lab)+parseInt(condomedstock2[k].cost);
+                                                              -}
+                                                              div.text-center
+                                                                .container(style='width: 100%;height:100%;border-radius: 1px')
+                                                                  label TOTAL COST : #{total_this_lab}
+                #dashboard.tab-pane.fade.align.in.active
+                  center
+                    .container-fluid(style="border:1px solid whitesmoke; border-radius:6px; background:lightgrey;")
+                      P(style="color:orange;font-family:san-serif;font-size:40px;") QUANTITY
+                      br
+                      br
+                      .row.dashboard-stats.container
+                        .col-md-4.col-md-offset-4(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{gtotal}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Total
+                                p.size-h2 
+                                    h4 Stock
+                      br
+                      br
+                      .row.dashboard-stats.container
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{tot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Lab
+                                p.size-h2 
+                                    h4 Stock
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{tratot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Transfered
+                                p.size-h2 
+                                    h4 Stock  
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{rectot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Recieved
+                                p.size-h2 
+                                    h4 Stock
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{contot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Condemend
+                                  p.size-h2 
+                                    h4 Stock
+                      br
+                      br
+                    .container-fluid(style="border:1px solid whitesmoke; border-radius:6px; background:lightgrey;")
+                      P(style="color:orange;font-family:san-serif;font-size:40px;") COST
+                      br
+                      br
+                      .row.dashboard-stats.container
+                        .col-md-4.col-md-offset-4(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{cgtotal}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Total
+                                p.size-h2 
+                                    h4 Stock
+                      br
+                      br
+                      .row.dashboard-stats.container
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{ctot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Lab
+                                p.size-h2 
+                                    h4 Stock
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{ctratot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Transfered
+                                p.size-h2 
+                                    h4 Stock  
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{crectot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Recieved
+                                p.size-h2 
+                                    h4 Stock
+                        .col-md-3(style="border:1px solid whitesmoke; border-radius:6px; background:#A3C86D;")
+                          br
+                          .col-md-12
+                            section.panel.panel-box(style="box-shadow:1px 1px 2px 1px #008738;")
+                              .panel-left.panel-icon(style="background:#FFBB00;color:#ffffff;")
+                                span(style='font-size:30px') #{ccontot}
+                                br
+                                p(style="font-family:san-serif;font-size:40px;")
+                              .panel-right.panel-icon.bg-reverse
+                                p.text-muted.no-margin.text
+                                  b
+                                    h4 Condemend
+                                  p.size-h2 
+                                    h4 Stock
+                      br
+                      br
+                #contact.tab-pane.fade.align
+                  .container
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    .row
+                      .col-md-12(style='text-align: center;')
+                        h1(style='color: grey;font-size: 45px')
+                          b For any queries,please contact
+                      .col-md-12.img-responsive(style='text-align: center;')
+                        img(src='images/Contact.png', width='620px', draggable="false")        
+    // js placed at the end of the document so the pages load faster
+    // common script for all pages
+    script(src='js/common-scripts.js') 
+    
+    //Online Links for datatables    
+    script(src='js/jquery.dataTables.min.js')
+    script(src='js/dataTables.buttons.min.js')
+    script(src='js/buttons.flash.min.js')
+    script(src='js/jszip.min.js')
+    script(src='js/pdfmake.min.js')
+    script(src='js/vfs_fonts.js')
+    script(src='js/buttons.html5.min.js')
+    script(src='js/buttons.print.min.js')
+    script.
+      $(document).ready(function () {
+        $('.dataTables-example').dataTable({
+          dom: 'Bfrtip',
+          buttons: [
+              {
+                  extend: 'copy',
+                  title: 'Stock Register'
+              },
+              {
+                  extend: 'csvHtml5',
+                  title: 'Stock Register'
+              },
+              {
+                  extend: 'excelHtml5',
+                  title: 'Stock Register'
+              },
+              {
+                  extend: 'pdfHtml5',
+                  title: 'Stock Register'
+              },
+              {
+                  extend: 'print',
+                  title: 'Stock Register'
+              }
+          ]
+        });
+      });
